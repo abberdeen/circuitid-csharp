@@ -1,4 +1,4 @@
-# circuitid-csharp - the C# library for the Circuit ID REST API
+circuitid-csharp
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,9 +48,9 @@ Run the following command to generate the DLL
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 
 ```csharp
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+circuitid-csharp
+circuitid-csharp
+circuitid-csharp
 
 ```
 
@@ -62,7 +62,7 @@ A `.nuspec` is included with the project. You can follow the Nuget quickstart to
 This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` directly:
 
 ```
-nuget pack -Build -OutputDirectory out circuitid-csharp.csproj
+circuitid-csharp
 ```
 
 Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/en-us/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
@@ -73,9 +73,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+circuitid-csharp
+circuitid-csharp
+circuitid-csharp
 
 namespace Example
 {
