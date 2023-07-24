@@ -54,12 +54,12 @@ namespace Com.CircuitID.Client
         public ApiClient()
         {
             Configuration = Com.CircuitID.Client.Configuration.Default;
-            RestClient = new RestClient("https://cloud9.circuitid.com");
+            RestClient = new RestClient("https://rest.circuitid.com");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://cloud9.circuitid.com).
+        /// with default base path (https://rest.circuitid.com).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config)
@@ -74,7 +74,7 @@ namespace Com.CircuitID.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://cloud9.circuitid.com")
+        public ApiClient(String basePath = "https://rest.circuitid.com")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");

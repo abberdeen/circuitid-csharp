@@ -84,7 +84,7 @@ namespace Example
         public static void Main()
         {
 
-            Configuration.Default.BasePath = "https://cloud9.circuitid.com";
+            Configuration.Default.BasePath = "https://rest.circuitid.com";
             // Configure API key authorization: jwt
             Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -113,7 +113,7 @@ namespace Example
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
