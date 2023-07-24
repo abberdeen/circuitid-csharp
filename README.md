@@ -9,19 +9,8 @@ We are excited to have you on board and are confident that this documentation si
                 
 Happy coding!
 
-# Clients
 
-Discover the convenience of Circuit ID's readily available Client API libraries, enabling you to initiate seamless integration without delay. These pre-built libraries are designed for immediate use, empowering you to leverage the API's functionalities effortlessly. Get started with a Circuit ID&reg; Client library and streamline your development process today.
-
-- <a href='https://github.com/circuitid/circuitid-node' target='_blank'>Node</a>
-- <a href='https://github.com/circuitid/circuitid-python' target='_blank'>Python</a>
-- <a href='https://github.com/circuitid/circuitid-java' target='_blank'>Java</a>
-# circuitid-csharp
-- <a href='https://github.com/circuitid/circuitid-ruby' target='_blank'>Ruby</a>
-- <a href='https://github.com/circuitid/circuitid-go' target='_blank'>Go</a>
-
-
-- API version: 0.47.14
+- API version: 0.47.15
 - SDK version: 1.0.0
 - Build package: org.openapitools.codegen.languages.CSharpClientCodegen
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -95,7 +84,7 @@ namespace Example
         public static void Main()
         {
 
-            Configuration.Default.BasePath = "https://rest.circuitid.com";
+            Configuration.Default.BasePath = "https://cloud9.circuitid.com";
             // Configure API key authorization: jwt
             Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -124,7 +113,7 @@ namespace Example
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
