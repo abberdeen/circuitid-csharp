@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindConferenceRooms200Response
+# Com.CircuitID.Models.FindConferenceRooms200Response
 
 ## Properties
 

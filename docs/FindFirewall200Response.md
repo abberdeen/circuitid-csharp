@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindFirewall200Response
+# Com.CircuitID.Models.FindFirewall200Response
 
 ## Properties
 

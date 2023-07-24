@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindGroups200Response
+# Com.CircuitID.Models.FindGroups200Response
 
 ## Properties
 

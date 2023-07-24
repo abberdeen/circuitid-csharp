@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindUserTokens200Response
+# Com.CircuitID.Models.FindUserTokens200Response
 
 ## Properties
 

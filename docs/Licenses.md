@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Licenses
+# Com.CircuitID.Models.Licenses
 
 ## Properties
 

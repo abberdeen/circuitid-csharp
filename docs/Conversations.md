@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Conversations
+# Com.CircuitID.Models.Conversations
 
 ## Properties
 

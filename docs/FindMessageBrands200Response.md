@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindMessageBrands200Response
+# Com.CircuitID.Models.FindMessageBrands200Response
 
 ## Properties
 

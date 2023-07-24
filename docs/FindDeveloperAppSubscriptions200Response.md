@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindDeveloperAppSubscriptions200Response
+# Com.CircuitID.Models.FindDeveloperAppSubscriptions200Response
 
 ## Properties
 

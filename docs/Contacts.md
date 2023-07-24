@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Contacts
+# Com.CircuitID.Models.Contacts
 
 ## Properties
 

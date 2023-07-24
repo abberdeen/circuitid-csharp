@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindMenuOptions200Response
+# Com.CircuitID.Models.FindMenuOptions200Response
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Find
+# Com.CircuitID.Models.Find
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Faxaccounts
+# Com.CircuitID.Models.Faxaccounts
 
 ## Properties
 

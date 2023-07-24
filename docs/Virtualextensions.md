@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Virtualextensions
+# Com.CircuitID.Models.Virtualextensions
 
 ## Properties
 

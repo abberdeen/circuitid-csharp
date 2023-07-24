@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindChatRooms200Response
+# Com.CircuitID.Models.FindChatRooms200Response
 
 ## Properties
 

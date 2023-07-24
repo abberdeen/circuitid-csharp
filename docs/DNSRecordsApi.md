@@ -1,4 +1,4 @@
-# circuitid-csharp.CircuitID.DNSRecordsApi
+# Com.CircuitID.Api.DNSRecordsApi
 
 All URIs are relative to *https://cloud9.circuitid.com*
 
@@ -21,9 +21,9 @@ Search and retrieve multiple objects simultaneously.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {

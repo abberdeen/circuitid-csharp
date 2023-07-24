@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindServers200Response
+# Com.CircuitID.Models.FindServers200Response
 
 ## Properties
 

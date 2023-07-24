@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Acceptedsenders
+# Com.CircuitID.Models.Acceptedsenders
 
 ## Properties
 

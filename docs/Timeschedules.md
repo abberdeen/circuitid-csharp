@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Timeschedules
+# Com.CircuitID.Models.Timeschedules
 
 ## Properties
 

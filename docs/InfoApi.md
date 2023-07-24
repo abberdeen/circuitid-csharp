@@ -1,4 +1,4 @@
-# circuitid-csharp.CircuitID.InfoApi
+# Com.CircuitID.Api.InfoApi
 
 All URIs are relative to *https://cloud9.circuitid.com*
 
@@ -21,9 +21,9 @@ Returns an object containing the requested information.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {

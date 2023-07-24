@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindConversationMessages200Response
+# Com.CircuitID.Models.FindConversationMessages200Response
 
 ## Properties
 

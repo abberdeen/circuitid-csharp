@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Callqueues
+# Com.CircuitID.Models.Callqueues
 
 ## Properties
 

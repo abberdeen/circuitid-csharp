@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindFaxes200Response
+# Com.CircuitID.Models.FindFaxes200Response
 
 ## Properties
 

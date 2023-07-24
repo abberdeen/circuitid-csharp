@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Announcements
+# Com.CircuitID.Models.Announcements
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Directories
+# Com.CircuitID.Models.Directories
 
 ## Properties
 

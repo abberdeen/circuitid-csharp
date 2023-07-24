@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindAcceptedSenders200Response
+# Com.CircuitID.Models.FindAcceptedSenders200Response
 
 ## Properties
 

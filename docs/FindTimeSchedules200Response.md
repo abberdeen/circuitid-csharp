@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindTimeSchedules200Response
+# Com.CircuitID.Models.FindTimeSchedules200Response
 
 ## Properties
 

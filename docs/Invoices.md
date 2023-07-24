@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Invoices
+# Com.CircuitID.Models.Invoices
 
 ## Properties
 

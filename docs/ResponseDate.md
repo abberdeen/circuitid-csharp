@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.ResponseDate
+# Com.CircuitID.Models.ResponseDate
 
 ## Properties
 

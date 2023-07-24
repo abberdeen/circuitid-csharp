@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Messagecampaigns
+# Com.CircuitID.Models.Messagecampaigns
 
 ## Properties
 

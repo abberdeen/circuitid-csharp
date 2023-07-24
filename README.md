@@ -1,4 +1,4 @@
-# circuitid-csharp
+# Com.CircuitID - the C# library for the Circuit ID REST API
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,9 +48,9 @@ Run the following command to generate the DLL
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 
 ```csharp
-# circuitid-csharp
-# circuitid-csharp
-# circuitid-csharp
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 ```
 
@@ -62,7 +62,7 @@ A `.nuspec` is included with the project. You can follow the Nuget quickstart to
 This `.nuspec` uses placeholders from the `.csproj`, so build the `.csproj` directly:
 
 ```
-# circuitid-csharp
+nuget pack -Build -OutputDirectory out Com.CircuitID.csproj
 ```
 
 Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) or [other host](https://docs.microsoft.com/en-us/nuget/hosting-packages/overview) and consume the new package via Nuget as usual.
@@ -73,9 +73,9 @@ Then, publish to a [local feed](https://docs.microsoft.com/en-us/nuget/hosting-p
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-# circuitid-csharp
-# circuitid-csharp
-# circuitid-csharp
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {
@@ -321,93 +321,93 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
- - [CircuitID.Acceptedsenders](docs/Acceptedsenders.md)
- - [CircuitID.Announcements](docs/Announcements.md)
- - [CircuitID.Authentication](docs/Authentication.md)
- - [CircuitID.Callqueueagents](docs/Callqueueagents.md)
- - [CircuitID.Callqueues](docs/Callqueues.md)
- - [CircuitID.Chatrooms](docs/Chatrooms.md)
- - [CircuitID.Clients](docs/Clients.md)
- - [CircuitID.Conferencerooms](docs/Conferencerooms.md)
- - [CircuitID.Contacts](docs/Contacts.md)
- - [CircuitID.Conversationmessages](docs/Conversationmessages.md)
- - [CircuitID.Conversations](docs/Conversations.md)
- - [CircuitID.Customers](docs/Customers.md)
- - [CircuitID.Developerapps](docs/Developerapps.md)
- - [CircuitID.Developerappsubscriptions](docs/Developerappsubscriptions.md)
- - [CircuitID.Directories](docs/Directories.md)
- - [CircuitID.Domains](docs/Domains.md)
- - [CircuitID.Faxaccounts](docs/Faxaccounts.md)
- - [CircuitID.Faxes](docs/Faxes.md)
- - [CircuitID.Find](docs/Find.md)
- - [CircuitID.FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
- - [CircuitID.FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
- - [CircuitID.FindCallQueueAgents200Response](docs/FindCallQueueAgents200Response.md)
- - [CircuitID.FindCallQueues200Response](docs/FindCallQueues200Response.md)
- - [CircuitID.FindChatRooms200Response](docs/FindChatRooms200Response.md)
- - [CircuitID.FindClients200Response](docs/FindClients200Response.md)
- - [CircuitID.FindConferenceRooms200Response](docs/FindConferenceRooms200Response.md)
- - [CircuitID.FindContacts200Response](docs/FindContacts200Response.md)
- - [CircuitID.FindConversationMessages200Response](docs/FindConversationMessages200Response.md)
- - [CircuitID.FindConversations200Response](docs/FindConversations200Response.md)
- - [CircuitID.FindCustomers200Response](docs/FindCustomers200Response.md)
- - [CircuitID.FindDeveloperAppSubscriptions200Response](docs/FindDeveloperAppSubscriptions200Response.md)
- - [CircuitID.FindDeveloperApps200Response](docs/FindDeveloperApps200Response.md)
- - [CircuitID.FindDirectories200Response](docs/FindDirectories200Response.md)
- - [CircuitID.FindDomains200Response](docs/FindDomains200Response.md)
- - [CircuitID.FindFaxAccount200Response](docs/FindFaxAccount200Response.md)
- - [CircuitID.FindFaxes200Response](docs/FindFaxes200Response.md)
- - [CircuitID.FindFirewall200Response](docs/FindFirewall200Response.md)
- - [CircuitID.FindGroupMembers200Response](docs/FindGroupMembers200Response.md)
- - [CircuitID.FindGroups200Response](docs/FindGroups200Response.md)
- - [CircuitID.FindHolidays200Response](docs/FindHolidays200Response.md)
- - [CircuitID.FindInvoiceItems200Response](docs/FindInvoiceItems200Response.md)
- - [CircuitID.FindInvoices200Response](docs/FindInvoices200Response.md)
- - [CircuitID.FindLicenses200Response](docs/FindLicenses200Response.md)
- - [CircuitID.FindMenuOptions200Response](docs/FindMenuOptions200Response.md)
- - [CircuitID.FindMenus200Response](docs/FindMenus200Response.md)
- - [CircuitID.FindMessageBrands200Response](docs/FindMessageBrands200Response.md)
- - [CircuitID.FindMessageCampaigns200Response](docs/FindMessageCampaigns200Response.md)
- - [CircuitID.FindNumberPorts200Response](docs/FindNumberPorts200Response.md)
- - [CircuitID.FindNumbers200Response](docs/FindNumbers200Response.md)
- - [CircuitID.FindOffices200Response](docs/FindOffices200Response.md)
- - [CircuitID.FindPhoneInboundRuleActions200Response](docs/FindPhoneInboundRuleActions200Response.md)
- - [CircuitID.FindPhoneInboundRules200Response](docs/FindPhoneInboundRules200Response.md)
- - [CircuitID.FindPhoneOutboundRuleActions200Response](docs/FindPhoneOutboundRuleActions200Response.md)
- - [CircuitID.FindPhoneOutboundRules200Response](docs/FindPhoneOutboundRules200Response.md)
- - [CircuitID.FindRateCenters200Response](docs/FindRateCenters200Response.md)
- - [CircuitID.FindServers200Response](docs/FindServers200Response.md)
- - [CircuitID.FindTimeSchedules200Response](docs/FindTimeSchedules200Response.md)
- - [CircuitID.FindUserTokens200Response](docs/FindUserTokens200Response.md)
- - [CircuitID.FindUsers200Response](docs/FindUsers200Response.md)
- - [CircuitID.FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
- - [CircuitID.Firewall](docs/Firewall.md)
- - [CircuitID.Groupmembers](docs/Groupmembers.md)
- - [CircuitID.Groups](docs/Groups.md)
- - [CircuitID.Holidays](docs/Holidays.md)
- - [CircuitID.Invoiceitems](docs/Invoiceitems.md)
- - [CircuitID.Invoices](docs/Invoices.md)
- - [CircuitID.Licenses](docs/Licenses.md)
- - [CircuitID.Menuoptions](docs/Menuoptions.md)
- - [CircuitID.Menus](docs/Menus.md)
- - [CircuitID.Messagebrands](docs/Messagebrands.md)
- - [CircuitID.Messagecampaigns](docs/Messagecampaigns.md)
- - [CircuitID.Numberports](docs/Numberports.md)
- - [CircuitID.Numbers](docs/Numbers.md)
- - [CircuitID.Offices](docs/Offices.md)
- - [CircuitID.Phoneinboundruleactions](docs/Phoneinboundruleactions.md)
- - [CircuitID.Phoneinboundrules](docs/Phoneinboundrules.md)
- - [CircuitID.Phoneoutboundruleactions](docs/Phoneoutboundruleactions.md)
- - [CircuitID.Phoneoutboundrules](docs/Phoneoutboundrules.md)
- - [CircuitID.Ratecenters](docs/Ratecenters.md)
- - [CircuitID.ResponseDate](docs/ResponseDate.md)
- - [CircuitID.ResponseError](docs/ResponseError.md)
- - [CircuitID.ResponseUsers](docs/ResponseUsers.md)
- - [CircuitID.Servers](docs/Servers.md)
- - [CircuitID.Timeschedules](docs/Timeschedules.md)
- - [CircuitID.Users](docs/Users.md)
- - [CircuitID.Usertokens](docs/Usertokens.md)
- - [CircuitID.Virtualextensions](docs/Virtualextensions.md)
+ - [Models.Acceptedsenders](docs/Acceptedsenders.md)
+ - [Models.Announcements](docs/Announcements.md)
+ - [Models.Authentication](docs/Authentication.md)
+ - [Models.Callqueueagents](docs/Callqueueagents.md)
+ - [Models.Callqueues](docs/Callqueues.md)
+ - [Models.Chatrooms](docs/Chatrooms.md)
+ - [Models.Clients](docs/Clients.md)
+ - [Models.Conferencerooms](docs/Conferencerooms.md)
+ - [Models.Contacts](docs/Contacts.md)
+ - [Models.Conversationmessages](docs/Conversationmessages.md)
+ - [Models.Conversations](docs/Conversations.md)
+ - [Models.Customers](docs/Customers.md)
+ - [Models.Developerapps](docs/Developerapps.md)
+ - [Models.Developerappsubscriptions](docs/Developerappsubscriptions.md)
+ - [Models.Directories](docs/Directories.md)
+ - [Models.Domains](docs/Domains.md)
+ - [Models.Faxaccounts](docs/Faxaccounts.md)
+ - [Models.Faxes](docs/Faxes.md)
+ - [Models.Find](docs/Find.md)
+ - [Models.FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
+ - [Models.FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
+ - [Models.FindCallQueueAgents200Response](docs/FindCallQueueAgents200Response.md)
+ - [Models.FindCallQueues200Response](docs/FindCallQueues200Response.md)
+ - [Models.FindChatRooms200Response](docs/FindChatRooms200Response.md)
+ - [Models.FindClients200Response](docs/FindClients200Response.md)
+ - [Models.FindConferenceRooms200Response](docs/FindConferenceRooms200Response.md)
+ - [Models.FindContacts200Response](docs/FindContacts200Response.md)
+ - [Models.FindConversationMessages200Response](docs/FindConversationMessages200Response.md)
+ - [Models.FindConversations200Response](docs/FindConversations200Response.md)
+ - [Models.FindCustomers200Response](docs/FindCustomers200Response.md)
+ - [Models.FindDeveloperAppSubscriptions200Response](docs/FindDeveloperAppSubscriptions200Response.md)
+ - [Models.FindDeveloperApps200Response](docs/FindDeveloperApps200Response.md)
+ - [Models.FindDirectories200Response](docs/FindDirectories200Response.md)
+ - [Models.FindDomains200Response](docs/FindDomains200Response.md)
+ - [Models.FindFaxAccount200Response](docs/FindFaxAccount200Response.md)
+ - [Models.FindFaxes200Response](docs/FindFaxes200Response.md)
+ - [Models.FindFirewall200Response](docs/FindFirewall200Response.md)
+ - [Models.FindGroupMembers200Response](docs/FindGroupMembers200Response.md)
+ - [Models.FindGroups200Response](docs/FindGroups200Response.md)
+ - [Models.FindHolidays200Response](docs/FindHolidays200Response.md)
+ - [Models.FindInvoiceItems200Response](docs/FindInvoiceItems200Response.md)
+ - [Models.FindInvoices200Response](docs/FindInvoices200Response.md)
+ - [Models.FindLicenses200Response](docs/FindLicenses200Response.md)
+ - [Models.FindMenuOptions200Response](docs/FindMenuOptions200Response.md)
+ - [Models.FindMenus200Response](docs/FindMenus200Response.md)
+ - [Models.FindMessageBrands200Response](docs/FindMessageBrands200Response.md)
+ - [Models.FindMessageCampaigns200Response](docs/FindMessageCampaigns200Response.md)
+ - [Models.FindNumberPorts200Response](docs/FindNumberPorts200Response.md)
+ - [Models.FindNumbers200Response](docs/FindNumbers200Response.md)
+ - [Models.FindOffices200Response](docs/FindOffices200Response.md)
+ - [Models.FindPhoneInboundRuleActions200Response](docs/FindPhoneInboundRuleActions200Response.md)
+ - [Models.FindPhoneInboundRules200Response](docs/FindPhoneInboundRules200Response.md)
+ - [Models.FindPhoneOutboundRuleActions200Response](docs/FindPhoneOutboundRuleActions200Response.md)
+ - [Models.FindPhoneOutboundRules200Response](docs/FindPhoneOutboundRules200Response.md)
+ - [Models.FindRateCenters200Response](docs/FindRateCenters200Response.md)
+ - [Models.FindServers200Response](docs/FindServers200Response.md)
+ - [Models.FindTimeSchedules200Response](docs/FindTimeSchedules200Response.md)
+ - [Models.FindUserTokens200Response](docs/FindUserTokens200Response.md)
+ - [Models.FindUsers200Response](docs/FindUsers200Response.md)
+ - [Models.FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
+ - [Models.Firewall](docs/Firewall.md)
+ - [Models.Groupmembers](docs/Groupmembers.md)
+ - [Models.Groups](docs/Groups.md)
+ - [Models.Holidays](docs/Holidays.md)
+ - [Models.Invoiceitems](docs/Invoiceitems.md)
+ - [Models.Invoices](docs/Invoices.md)
+ - [Models.Licenses](docs/Licenses.md)
+ - [Models.Menuoptions](docs/Menuoptions.md)
+ - [Models.Menus](docs/Menus.md)
+ - [Models.Messagebrands](docs/Messagebrands.md)
+ - [Models.Messagecampaigns](docs/Messagecampaigns.md)
+ - [Models.Numberports](docs/Numberports.md)
+ - [Models.Numbers](docs/Numbers.md)
+ - [Models.Offices](docs/Offices.md)
+ - [Models.Phoneinboundruleactions](docs/Phoneinboundruleactions.md)
+ - [Models.Phoneinboundrules](docs/Phoneinboundrules.md)
+ - [Models.Phoneoutboundruleactions](docs/Phoneoutboundruleactions.md)
+ - [Models.Phoneoutboundrules](docs/Phoneoutboundrules.md)
+ - [Models.Ratecenters](docs/Ratecenters.md)
+ - [Models.ResponseDate](docs/ResponseDate.md)
+ - [Models.ResponseError](docs/ResponseError.md)
+ - [Models.ResponseUsers](docs/ResponseUsers.md)
+ - [Models.Servers](docs/Servers.md)
+ - [Models.Timeschedules](docs/Timeschedules.md)
+ - [Models.Users](docs/Users.md)
+ - [Models.Usertokens](docs/Usertokens.md)
+ - [Models.Virtualextensions](docs/Virtualextensions.md)
 
 
 <a id="documentation-for-authorization"></a>

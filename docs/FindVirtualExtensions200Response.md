@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindVirtualExtensions200Response
+# Com.CircuitID.Models.FindVirtualExtensions200Response
 
 ## Properties
 

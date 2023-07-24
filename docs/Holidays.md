@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Holidays
+# Com.CircuitID.Models.Holidays
 
 ## Properties
 

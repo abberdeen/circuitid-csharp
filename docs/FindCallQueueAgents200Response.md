@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindCallQueueAgents200Response
+# Com.CircuitID.Models.FindCallQueueAgents200Response
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindDirectories200Response
+# Com.CircuitID.Models.FindDirectories200Response
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Chatrooms
+# Com.CircuitID.Models.Chatrooms
 
 ## Properties
 

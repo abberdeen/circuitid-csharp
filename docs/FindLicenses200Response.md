@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindLicenses200Response
+# Com.CircuitID.Models.FindLicenses200Response
 
 ## Properties
 

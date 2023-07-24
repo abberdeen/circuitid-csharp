@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Firewall
+# Com.CircuitID.Models.Firewall
 
 ## Properties
 

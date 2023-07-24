@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindRateCenters200Response
+# Com.CircuitID.Models.FindRateCenters200Response
 
 ## Properties
 

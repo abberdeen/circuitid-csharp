@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Authentication
+# Com.CircuitID.Models.Authentication
 
 ## Properties
 

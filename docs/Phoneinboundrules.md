@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Phoneinboundrules
+# Com.CircuitID.Models.Phoneinboundrules
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindPhoneOutboundRuleActions200Response
+# Com.CircuitID.Models.FindPhoneOutboundRuleActions200Response
 
 ## Properties
 

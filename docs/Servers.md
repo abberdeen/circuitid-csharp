@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Servers
+# Com.CircuitID.Models.Servers
 
 ## Properties
 

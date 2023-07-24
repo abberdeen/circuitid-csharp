@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindInvoiceItems200Response
+# Com.CircuitID.Models.FindInvoiceItems200Response
 
 ## Properties
 

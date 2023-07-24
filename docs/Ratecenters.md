@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Ratecenters
+# Com.CircuitID.Models.Ratecenters
 
 ## Properties
 

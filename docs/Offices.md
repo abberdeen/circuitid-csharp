@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Offices
+# Com.CircuitID.Models.Offices
 
 ## Properties
 

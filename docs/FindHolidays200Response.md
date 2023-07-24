@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindHolidays200Response
+# Com.CircuitID.Models.FindHolidays200Response
 
 ## Properties
 

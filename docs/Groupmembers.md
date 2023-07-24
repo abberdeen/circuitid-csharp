@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Groupmembers
+# Com.CircuitID.Models.Groupmembers
 
 ## Properties
 

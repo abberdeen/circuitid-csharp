@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.ResponseUsers
+# Com.CircuitID.Models.ResponseUsers
 
 ## Properties
 

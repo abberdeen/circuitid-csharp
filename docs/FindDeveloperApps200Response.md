@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindDeveloperApps200Response
+# Com.CircuitID.Models.FindDeveloperApps200Response
 
 ## Properties
 

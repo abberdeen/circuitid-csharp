@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Numberports
+# Com.CircuitID.Models.Numberports
 
 ## Properties
 

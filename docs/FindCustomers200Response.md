@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindCustomers200Response
+# Com.CircuitID.Models.FindCustomers200Response
 
 ## Properties
 

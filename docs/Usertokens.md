@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Usertokens
+# Com.CircuitID.Models.Usertokens
 
 ## Properties
 

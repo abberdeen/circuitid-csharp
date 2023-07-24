@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Conferencerooms
+# Com.CircuitID.Models.Conferencerooms
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Developerappsubscriptions
+# Com.CircuitID.Models.Developerappsubscriptions
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# circuitid-csharp.CircuitID.FaxesApi
+# Com.CircuitID.Api.FaxesApi
 
 All URIs are relative to *https://cloud9.circuitid.com*
 
@@ -24,9 +24,9 @@ Add a new object to the system.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {
@@ -114,9 +114,9 @@ Search and retrieve multiple objects simultaneously.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {
@@ -216,9 +216,9 @@ Get an object from the REST API Endpoint by its unique id.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {
@@ -307,9 +307,9 @@ Delete an object by id, removing it from the service.
 ```csharp
 using System.Collections.Generic;
 using System.Diagnostics;
-using circuitid-csharp.CircuitID;
-using circuitid-csharp.Client;
-using circuitid-csharp.CircuitID;
+using Com.CircuitID.Api;
+using Com.CircuitID.Client;
+using Com.CircuitID.Models;
 
 namespace Example
 {

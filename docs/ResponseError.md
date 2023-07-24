@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.ResponseError
+# Com.CircuitID.Models.ResponseError
 
 ## Properties
 

@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindMessageCampaigns200Response
+# Com.CircuitID.Models.FindMessageCampaigns200Response
 
 ## Properties
 

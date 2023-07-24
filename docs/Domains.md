@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Domains
+# Com.CircuitID.Models.Domains
 
 ## Properties
 

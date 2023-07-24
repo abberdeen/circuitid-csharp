@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.Menuoptions
+# Com.CircuitID.Models.Menuoptions
 
 ## Properties
 

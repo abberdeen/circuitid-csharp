@@ -1,5 +1,5 @@
 
-# circuitid-csharp.CircuitID.FindNumberPorts200Response
+# Com.CircuitID.Models.FindNumberPorts200Response
 
 ## Properties
 
