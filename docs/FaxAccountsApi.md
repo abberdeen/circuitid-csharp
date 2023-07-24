@@ -1,14 +1,14 @@
-# Com.CircuitID.Api.FaxAccountApi
+# Com.CircuitID.Api.FaxAccountsApi
 
 All URIs are relative to *https://rest.circuitid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateFaxAccount**](FaxAccountApi.md#createfaxaccount) | **POST** /faxaccounts | Create a new object
-[**FindFaxAccount**](FaxAccountApi.md#findfaxaccount) | **GET** /faxaccounts | Find multiple objects
-[**GetFaxAccount**](FaxAccountApi.md#getfaxaccount) | **GET** /faxaccounts/{id} | Get object by id
-[**PatchFaxAccount**](FaxAccountApi.md#patchfaxaccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data
-[**RemoveFaxAccount**](FaxAccountApi.md#removefaxaccount) | **DELETE** /faxaccounts/{id} | Delete object by id
+[**CreateFaxAccount**](FaxAccountsApi.md#createfaxaccount) | **POST** /faxaccounts | Create a new object
+[**FindFaxAccounts**](FaxAccountsApi.md#findfaxaccounts) | **GET** /faxaccounts | Find multiple objects
+[**GetFaxAccount**](FaxAccountsApi.md#getfaxaccount) | **GET** /faxaccounts/{id} | Get object by id
+[**PatchFaxAccount**](FaxAccountsApi.md#patchfaxaccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data
+[**RemoveFaxAccount**](FaxAccountsApi.md#removefaxaccount) | **DELETE** /faxaccounts/{id} | Delete object by id
 
 
 
@@ -41,7 +41,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
-            var apiInstance = new FaxAccountApi(Configuration.Default);
+            var apiInstance = new FaxAccountsApi(Configuration.Default);
             var faxaccounts = new Faxaccounts(); // Faxaccounts | The JSON object that will be posted to the REST API endpoint.
 
             try
@@ -52,7 +52,7 @@ namespace Example
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxAccountApi.CreateFaxAccount: " + e.Message );
+                Debug.Print("Exception when calling FaxAccountsApi.CreateFaxAccount: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -102,9 +102,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## FindFaxAccount
+## FindFaxAccounts
 
-> FindFaxAccount200Response FindFaxAccount (Object search = null, Object limit = null, Object skip = null, Object sort = null, Object select = null, Object or = null, Object and = null)
+> FindFaxAccounts200Response FindFaxAccounts (Object search = null, Object limit = null, Object skip = null, Object sort = null, Object select = null, Object or = null, Object and = null)
 
 Find multiple objects
 
@@ -121,7 +121,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class FindFaxAccountExample
+    public class FindFaxAccountsExample
     {
         public static void Main()
         {
@@ -131,7 +131,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
-            var apiInstance = new FaxAccountApi(Configuration.Default);
+            var apiInstance = new FaxAccountsApi(Configuration.Default);
             var search = new Object(); // Object | Filter results by the specified value. (optional) 
             var limit = new Object(); // Object | $limit will return only the number of results you specify. (optional) 
             var skip = new Object(); // Object | $skip will skip the specified number of results. (optional) 
@@ -143,12 +143,12 @@ namespace Example
             try
             {
                 // Find multiple objects
-                FindFaxAccount200Response result = apiInstance.FindFaxAccount(search, limit, skip, sort, select, or, and);
+                FindFaxAccounts200Response result = apiInstance.FindFaxAccounts(search, limit, skip, sort, select, or, and);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxAccountApi.FindFaxAccount: " + e.Message );
+                Debug.Print("Exception when calling FaxAccountsApi.FindFaxAccounts: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FindFaxAccount200Response**](FindFaxAccount200Response.md)
+[**FindFaxAccounts200Response**](FindFaxAccounts200Response.md)
 
 ### Authorization
 
@@ -233,7 +233,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
-            var apiInstance = new FaxAccountApi(Configuration.Default);
+            var apiInstance = new FaxAccountsApi(Configuration.Default);
             var id = new Object(); // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
 
             try
@@ -244,7 +244,7 @@ namespace Example
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxAccountApi.GetFaxAccount: " + e.Message );
+                Debug.Print("Exception when calling FaxAccountsApi.GetFaxAccount: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -324,7 +324,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
-            var apiInstance = new FaxAccountApi(Configuration.Default);
+            var apiInstance = new FaxAccountsApi(Configuration.Default);
             var id = new Object(); // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
             var faxaccounts = new Faxaccounts(); // Faxaccounts | The request data.
 
@@ -336,7 +336,7 @@ namespace Example
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxAccountApi.PatchFaxAccount: " + e.Message );
+                Debug.Print("Exception when calling FaxAccountsApi.PatchFaxAccount: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -416,7 +416,7 @@ namespace Example
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
-            var apiInstance = new FaxAccountApi(Configuration.Default);
+            var apiInstance = new FaxAccountsApi(Configuration.Default);
             var id = new Object(); // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
 
             try
@@ -427,7 +427,7 @@ namespace Example
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxAccountApi.RemoveFaxAccount: " + e.Message );
+                Debug.Print("Exception when calling FaxAccountsApi.RemoveFaxAccount: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

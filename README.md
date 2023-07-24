@@ -10,7 +10,7 @@ We are excited to have you on board and are confident that this documentation si
 Happy coding!
 
 
-- API version: 0.47.15
+- API version: 0.47.16
 - SDK version: 1.0.0
 
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -186,25 +186,25 @@ Class | Method | HTTP request | Description
 *DeveloperAppsApi* | [**GetDeveloperApp**](docs/DeveloperAppsApi.md#getdeveloperapp) | **GET** /developerapps/{id} | Get object by id
 *DeveloperAppsApi* | [**PatchDeveloperApp**](docs/DeveloperAppsApi.md#patchdeveloperapp) | **PATCH** /developerapps/{id} | Patch object's data
 *DeveloperAppsApi* | [**RemoveDeveloperApp**](docs/DeveloperAppsApi.md#removedeveloperapp) | **DELETE** /developerapps/{id} | Delete object by id
-*DirectoriesApi* | [**CreateDirectorie**](docs/DirectoriesApi.md#createdirectorie) | **POST** /directories | Create a new object
+*DirectoriesApi* | [**Createdirectory**](docs/DirectoriesApi.md#createdirectory) | **POST** /directories | Create a new object
 *DirectoriesApi* | [**FindDirectories**](docs/DirectoriesApi.md#finddirectories) | **GET** /directories | Find multiple objects
-*DirectoriesApi* | [**GetDirectorie**](docs/DirectoriesApi.md#getdirectorie) | **GET** /directories/{id} | Get object by id
-*DirectoriesApi* | [**PatchDirectorie**](docs/DirectoriesApi.md#patchdirectorie) | **PATCH** /directories/{id} | Patch object's data
-*DirectoriesApi* | [**RemoveDirectorie**](docs/DirectoriesApi.md#removedirectorie) | **DELETE** /directories/{id} | Delete object by id
+*DirectoriesApi* | [**Getdirectory**](docs/DirectoriesApi.md#getdirectory) | **GET** /directories/{id} | Get object by id
+*DirectoriesApi* | [**Patchdirectory**](docs/DirectoriesApi.md#patchdirectory) | **PATCH** /directories/{id} | Patch object's data
+*DirectoriesApi* | [**Removedirectory**](docs/DirectoriesApi.md#removedirectory) | **DELETE** /directories/{id} | Delete object by id
 *DomainsApi* | [**CreateDomain**](docs/DomainsApi.md#createdomain) | **POST** /domains | Create a new object
 *DomainsApi* | [**FindDomains**](docs/DomainsApi.md#finddomains) | **GET** /domains | Find multiple objects
 *DomainsApi* | [**GetDomain**](docs/DomainsApi.md#getdomain) | **GET** /domains/{id} | Get object by id
 *DomainsApi* | [**PatchDomain**](docs/DomainsApi.md#patchdomain) | **PATCH** /domains/{id} | Patch object's data
 *DomainsApi* | [**RemoveDomain**](docs/DomainsApi.md#removedomain) | **DELETE** /domains/{id} | Delete object by id
-*FaxAccountApi* | [**CreateFaxAccount**](docs/FaxAccountApi.md#createfaxaccount) | **POST** /faxaccounts | Create a new object
-*FaxAccountApi* | [**FindFaxAccount**](docs/FaxAccountApi.md#findfaxaccount) | **GET** /faxaccounts | Find multiple objects
-*FaxAccountApi* | [**GetFaxAccount**](docs/FaxAccountApi.md#getfaxaccount) | **GET** /faxaccounts/{id} | Get object by id
-*FaxAccountApi* | [**PatchFaxAccount**](docs/FaxAccountApi.md#patchfaxaccount) | **PATCH** /faxaccounts/{id} | Patch object's data
-*FaxAccountApi* | [**RemoveFaxAccount**](docs/FaxAccountApi.md#removefaxaccount) | **DELETE** /faxaccounts/{id} | Delete object by id
-*FaxesApi* | [**CreateFaxe**](docs/FaxesApi.md#createfaxe) | **POST** /faxes | Create a new object
+*FaxAccountsApi* | [**CreateFaxAccount**](docs/FaxAccountsApi.md#createfaxaccount) | **POST** /faxaccounts | Create a new object
+*FaxAccountsApi* | [**FindFaxAccounts**](docs/FaxAccountsApi.md#findfaxaccounts) | **GET** /faxaccounts | Find multiple objects
+*FaxAccountsApi* | [**GetFaxAccount**](docs/FaxAccountsApi.md#getfaxaccount) | **GET** /faxaccounts/{id} | Get object by id
+*FaxAccountsApi* | [**PatchFaxAccount**](docs/FaxAccountsApi.md#patchfaxaccount) | **PATCH** /faxaccounts/{id} | Patch object's data
+*FaxAccountsApi* | [**RemoveFaxAccount**](docs/FaxAccountsApi.md#removefaxaccount) | **DELETE** /faxaccounts/{id} | Delete object by id
+*FaxesApi* | [**CreateFax**](docs/FaxesApi.md#createfax) | **POST** /faxes | Create a new object
 *FaxesApi* | [**FindFaxes**](docs/FaxesApi.md#findfaxes) | **GET** /faxes | Find multiple objects
-*FaxesApi* | [**GetFaxe**](docs/FaxesApi.md#getfaxe) | **GET** /faxes/{id} | Get object by id
-*FaxesApi* | [**RemoveFaxe**](docs/FaxesApi.md#removefaxe) | **DELETE** /faxes/{id} | Delete object by id
+*FaxesApi* | [**GetFax**](docs/FaxesApi.md#getfax) | **GET** /faxes/{id} | Get object by id
+*FaxesApi* | [**RemoveFax**](docs/FaxesApi.md#removefax) | **DELETE** /faxes/{id} | Delete object by id
 *FindNumbersApi* | [**FindFindNumbers**](docs/FindNumbersApi.md#findfindnumbers) | **GET** /findnumbers | Find multiple objects
 *FirewallApi* | [**CreateFirewall**](docs/FirewallApi.md#createfirewall) | **POST** /firewall | Create a new object
 *FirewallApi* | [**FindFirewall**](docs/FirewallApi.md#findfirewall) | **GET** /firewall | Find multiple objects
@@ -226,7 +226,7 @@ Class | Method | HTTP request | Description
 *HolidaysApi* | [**GetHoliday**](docs/HolidaysApi.md#getholiday) | **GET** /holidays/{id} | Get object by id
 *HolidaysApi* | [**PatchHoliday**](docs/HolidaysApi.md#patchholiday) | **PATCH** /holidays/{id} | Patch object's data
 *HolidaysApi* | [**RemoveHoliday**](docs/HolidaysApi.md#removeholiday) | **DELETE** /holidays/{id} | Delete object by id
-*InfoApi* | [**FindInfo**](docs/InfoApi.md#findinfo) | **GET** /info | Get object
+*InfoApi* | [**GetInfo**](docs/InfoApi.md#getinfo) | **GET** /info | Get object
 *InvoiceItemsApi* | [**FindInvoiceItems**](docs/InvoiceItemsApi.md#findinvoiceitems) | **GET** /invoiceitems | Find multiple objects
 *InvoiceItemsApi* | [**GetInvoiceItem**](docs/InvoiceItemsApi.md#getinvoiceitem) | **GET** /invoiceitems/{id} | Get object by id
 *InvoicesApi* | [**FindInvoices**](docs/InvoicesApi.md#findinvoices) | **GET** /invoices | Find multiple objects
@@ -355,7 +355,7 @@ Class | Method | HTTP request | Description
  - [Models.FindDeveloperApps200Response](docs/FindDeveloperApps200Response.md)
  - [Models.FindDirectories200Response](docs/FindDirectories200Response.md)
  - [Models.FindDomains200Response](docs/FindDomains200Response.md)
- - [Models.FindFaxAccount200Response](docs/FindFaxAccount200Response.md)
+ - [Models.FindFaxAccounts200Response](docs/FindFaxAccounts200Response.md)
  - [Models.FindFaxes200Response](docs/FindFaxes200Response.md)
  - [Models.FindFirewall200Response](docs/FindFirewall200Response.md)
  - [Models.FindGroupMembers200Response](docs/FindGroupMembers200Response.md)

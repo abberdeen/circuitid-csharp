@@ -4,16 +4,16 @@ All URIs are relative to *https://rest.circuitid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateFaxe**](FaxesApi.md#createfaxe) | **POST** /faxes | Create a new object
+[**CreateFax**](FaxesApi.md#createfax) | **POST** /faxes | Create a new object
 [**FindFaxes**](FaxesApi.md#findfaxes) | **GET** /faxes | Find multiple objects
-[**GetFaxe**](FaxesApi.md#getfaxe) | **GET** /faxes/{id} | Get object by id
-[**RemoveFaxe**](FaxesApi.md#removefaxe) | **DELETE** /faxes/{id} | Delete object by id
+[**GetFax**](FaxesApi.md#getfax) | **GET** /faxes/{id} | Get object by id
+[**RemoveFax**](FaxesApi.md#removefax) | **DELETE** /faxes/{id} | Delete object by id
 
 
 
-## CreateFaxe
+## CreateFax
 
-> Object CreateFaxe (Faxes faxes)
+> Object CreateFax (Faxes faxes)
 
 Create a new object
 
@@ -30,7 +30,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class CreateFaxeExample
+    public class CreateFaxExample
     {
         public static void Main()
         {
@@ -46,12 +46,12 @@ namespace Example
             try
             {
                 // Create a new object
-                Object result = apiInstance.CreateFaxe(faxes);
+                Object result = apiInstance.CreateFax(faxes);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxesApi.CreateFaxe: " + e.Message );
+                Debug.Print("Exception when calling FaxesApi.CreateFax: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -203,9 +203,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## GetFaxe
+## GetFax
 
-> Object GetFaxe (Object id)
+> Object GetFax (Object id)
 
 Get object by id
 
@@ -222,7 +222,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class GetFaxeExample
+    public class GetFaxExample
     {
         public static void Main()
         {
@@ -238,12 +238,12 @@ namespace Example
             try
             {
                 // Get object by id
-                Object result = apiInstance.GetFaxe(id);
+                Object result = apiInstance.GetFax(id);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxesApi.GetFaxe: " + e.Message );
+                Debug.Print("Exception when calling FaxesApi.GetFax: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -294,9 +294,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## RemoveFaxe
+## RemoveFax
 
-> Object RemoveFaxe (Object id)
+> Object RemoveFax (Object id)
 
 Delete object by id
 
@@ -313,7 +313,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class RemoveFaxeExample
+    public class RemoveFaxExample
     {
         public static void Main()
         {
@@ -329,12 +329,12 @@ namespace Example
             try
             {
                 // Delete object by id
-                Object result = apiInstance.RemoveFaxe(id);
+                Object result = apiInstance.RemoveFax(id);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling FaxesApi.RemoveFaxe: " + e.Message );
+                Debug.Print("Exception when calling FaxesApi.RemoveFax: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

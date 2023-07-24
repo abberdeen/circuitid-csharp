@@ -40,7 +40,7 @@ docs/Directories.md
 docs/DirectoriesApi.md
 docs/Domains.md
 docs/DomainsApi.md
-docs/FaxAccountApi.md
+docs/FaxAccountsApi.md
 docs/Faxaccounts.md
 docs/Faxes.md
 docs/FaxesApi.md
@@ -60,7 +60,7 @@ docs/FindDeveloperAppSubscriptions200Response.md
 docs/FindDeveloperApps200Response.md
 docs/FindDirectories200Response.md
 docs/FindDomains200Response.md
-docs/FindFaxAccount200Response.md
+docs/FindFaxAccounts200Response.md
 docs/FindFaxes200Response.md
 docs/FindFirewall200Response.md
 docs/FindGroupMembers200Response.md
@@ -161,7 +161,7 @@ src/Com.CircuitID.Test/Api/DeveloperAppSubscriptionsApiTests.cs
 src/Com.CircuitID.Test/Api/DeveloperAppsApiTests.cs
 src/Com.CircuitID.Test/Api/DirectoriesApiTests.cs
 src/Com.CircuitID.Test/Api/DomainsApiTests.cs
-src/Com.CircuitID.Test/Api/FaxAccountApiTests.cs
+src/Com.CircuitID.Test/Api/FaxAccountsApiTests.cs
 src/Com.CircuitID.Test/Api/FaxesApiTests.cs
 src/Com.CircuitID.Test/Api/FindNumbersApiTests.cs
 src/Com.CircuitID.Test/Api/FirewallApiTests.cs
@@ -224,7 +224,7 @@ src/Com.CircuitID.Test/Models/FindDeveloperAppSubscriptions200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindDeveloperApps200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindDirectories200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindDomains200ResponseTests.cs
-src/Com.CircuitID.Test/Models/FindFaxAccount200ResponseTests.cs
+src/Com.CircuitID.Test/Models/FindFaxAccounts200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindFaxes200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindFirewall200ResponseTests.cs
 src/Com.CircuitID.Test/Models/FindGroupMembers200ResponseTests.cs
@@ -298,7 +298,7 @@ src/Com.CircuitID/Api/DeveloperAppSubscriptionsApi.cs
 src/Com.CircuitID/Api/DeveloperAppsApi.cs
 src/Com.CircuitID/Api/DirectoriesApi.cs
 src/Com.CircuitID/Api/DomainsApi.cs
-src/Com.CircuitID/Api/FaxAccountApi.cs
+src/Com.CircuitID/Api/FaxAccountsApi.cs
 src/Com.CircuitID/Api/FaxesApi.cs
 src/Com.CircuitID/Api/FindNumbersApi.cs
 src/Com.CircuitID/Api/FirewallApi.cs
@@ -372,7 +372,7 @@ src/Com.CircuitID/Models/FindDeveloperAppSubscriptions200Response.cs
 src/Com.CircuitID/Models/FindDeveloperApps200Response.cs
 src/Com.CircuitID/Models/FindDirectories200Response.cs
 src/Com.CircuitID/Models/FindDomains200Response.cs
-src/Com.CircuitID/Models/FindFaxAccount200Response.cs
+src/Com.CircuitID/Models/FindFaxAccounts200Response.cs
 src/Com.CircuitID/Models/FindFaxes200Response.cs
 src/Com.CircuitID/Models/FindFirewall200Response.cs
 src/Com.CircuitID/Models/FindGroupMembers200Response.cs

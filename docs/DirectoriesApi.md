@@ -4,17 +4,17 @@ All URIs are relative to *https://rest.circuitid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateDirectorie**](DirectoriesApi.md#createdirectorie) | **POST** /directories | Create a new object
+[**Createdirectory**](DirectoriesApi.md#createdirectory) | **POST** /directories | Create a new object
 [**FindDirectories**](DirectoriesApi.md#finddirectories) | **GET** /directories | Find multiple objects
-[**GetDirectorie**](DirectoriesApi.md#getdirectorie) | **GET** /directories/{id} | Get object by id
-[**PatchDirectorie**](DirectoriesApi.md#patchdirectorie) | **PATCH** /directories/{id} | Patch object&#39;s data
-[**RemoveDirectorie**](DirectoriesApi.md#removedirectorie) | **DELETE** /directories/{id} | Delete object by id
+[**Getdirectory**](DirectoriesApi.md#getdirectory) | **GET** /directories/{id} | Get object by id
+[**Patchdirectory**](DirectoriesApi.md#patchdirectory) | **PATCH** /directories/{id} | Patch object&#39;s data
+[**Removedirectory**](DirectoriesApi.md#removedirectory) | **DELETE** /directories/{id} | Delete object by id
 
 
 
-## CreateDirectorie
+## Createdirectory
 
-> Object CreateDirectorie (Directories directories)
+> Object Createdirectory (Directories directories)
 
 Create a new object
 
@@ -31,7 +31,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class CreateDirectorieExample
+    public class CreatedirectoryExample
     {
         public static void Main()
         {
@@ -47,12 +47,12 @@ namespace Example
             try
             {
                 // Create a new object
-                Object result = apiInstance.CreateDirectorie(directories);
+                Object result = apiInstance.Createdirectory(directories);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling DirectoriesApi.CreateDirectorie: " + e.Message );
+                Debug.Print("Exception when calling DirectoriesApi.Createdirectory: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -204,9 +204,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## GetDirectorie
+## Getdirectory
 
-> Object GetDirectorie (Object id)
+> Object Getdirectory (Object id)
 
 Get object by id
 
@@ -223,7 +223,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class GetDirectorieExample
+    public class GetdirectoryExample
     {
         public static void Main()
         {
@@ -239,12 +239,12 @@ namespace Example
             try
             {
                 // Get object by id
-                Object result = apiInstance.GetDirectorie(id);
+                Object result = apiInstance.Getdirectory(id);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling DirectoriesApi.GetDirectorie: " + e.Message );
+                Debug.Print("Exception when calling DirectoriesApi.Getdirectory: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -295,9 +295,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## PatchDirectorie
+## Patchdirectory
 
-> Object PatchDirectorie (Object id, Directories directories)
+> Object Patchdirectory (Object id, Directories directories)
 
 Patch object's data
 
@@ -314,7 +314,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class PatchDirectorieExample
+    public class PatchdirectoryExample
     {
         public static void Main()
         {
@@ -331,12 +331,12 @@ namespace Example
             try
             {
                 // Patch object's data
-                Object result = apiInstance.PatchDirectorie(id, directories);
+                Object result = apiInstance.Patchdirectory(id, directories);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling DirectoriesApi.PatchDirectorie: " + e.Message );
+                Debug.Print("Exception when calling DirectoriesApi.Patchdirectory: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -387,9 +387,9 @@ Name | Type | Description  | Notes
 [[Back to README]](../README.md)
 
 
-## RemoveDirectorie
+## Removedirectory
 
-> Object RemoveDirectorie (Object id)
+> Object Removedirectory (Object id)
 
 Delete object by id
 
@@ -406,7 +406,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class RemoveDirectorieExample
+    public class RemovedirectoryExample
     {
         public static void Main()
         {
@@ -422,12 +422,12 @@ namespace Example
             try
             {
                 // Delete object by id
-                Object result = apiInstance.RemoveDirectorie(id);
+                Object result = apiInstance.Removedirectory(id);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling DirectoriesApi.RemoveDirectorie: " + e.Message );
+                Debug.Print("Exception when calling DirectoriesApi.Removedirectory: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }

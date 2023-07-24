@@ -1,5 +1,5 @@
 
-# Com.CircuitID.Models.FindFaxAccount200Response
+# Com.CircuitID.Models.FindFaxAccounts200Response
 
 ## Properties
 

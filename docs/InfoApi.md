@@ -4,13 +4,13 @@ All URIs are relative to *https://rest.circuitid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**FindInfo**](InfoApi.md#findinfo) | **GET** /info | Get object
+[**GetInfo**](InfoApi.md#getinfo) | **GET** /info | Get object
 
 
 
-## FindInfo
+## GetInfo
 
-> Object FindInfo ()
+> Object GetInfo ()
 
 Get object
 
@@ -27,7 +27,7 @@ using Com.CircuitID.Models;
 
 namespace Example
 {
-    public class FindInfoExample
+    public class GetInfoExample
     {
         public static void Main()
         {
@@ -42,12 +42,12 @@ namespace Example
             try
             {
                 // Get object
-                Object result = apiInstance.FindInfo();
+                Object result = apiInstance.GetInfo();
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
             {
-                Debug.Print("Exception when calling InfoApi.FindInfo: " + e.Message );
+                Debug.Print("Exception when calling InfoApi.GetInfo: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
