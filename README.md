@@ -12,7 +12,7 @@ Happy coding!
 
 - API version: 0.47.15
 - SDK version: 1.0.0
-- Build package: org.openapitools.codegen.languages.CSharpClientCodegen
+
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
 
 ## Frameworks supported
