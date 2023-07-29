@@ -10,7 +10,7 @@ We are excited to have you on board and are confident that this documentation si
 Happy coding!
 
 
-- API version: 0.47.17
+- API version: 0.47.19
 - SDK version: 1.0.0
 
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -84,7 +84,7 @@ namespace Example
         public static void Main()
         {
 
-            Configuration.Default.BasePath = "https://cloud9.circuitid.com";
+            Configuration.Default.BasePath = "https://rest.circuitid.com";
             // Configure API key authorization: jwt
             Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -96,7 +96,7 @@ namespace Example
             try
             {
                 // Create a new object
-                Object result = apiInstance.CreateAcceptedSender(acceptedsenders);
+                GetAcceptedSender200Response result = apiInstance.CreateAcceptedSender(acceptedsenders);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -113,7 +113,7 @@ namespace Example
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -332,6 +332,7 @@ Class | Method | HTTP request | Description
  - [Models.Contacts](docs/Contacts.md)
  - [Models.Conversationmessages](docs/Conversationmessages.md)
  - [Models.Conversations](docs/Conversations.md)
+ - [Models.CreateAuthentication200Response](docs/CreateAuthentication200Response.md)
  - [Models.Customers](docs/Customers.md)
  - [Models.Developerapps](docs/Developerapps.md)
  - [Models.Developerappsubscriptions](docs/Developerappsubscriptions.md)
@@ -342,6 +343,7 @@ Class | Method | HTTP request | Description
  - [Models.Find](docs/Find.md)
  - [Models.FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
  - [Models.FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
+ - [Models.FindAppMarketplace200Response](docs/FindAppMarketplace200Response.md)
  - [Models.FindCallQueueAgents200Response](docs/FindCallQueueAgents200Response.md)
  - [Models.FindCallQueues200Response](docs/FindCallQueues200Response.md)
  - [Models.FindChatRooms200Response](docs/FindChatRooms200Response.md)
@@ -382,6 +384,47 @@ Class | Method | HTTP request | Description
  - [Models.FindUsers200Response](docs/FindUsers200Response.md)
  - [Models.FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
  - [Models.Firewall](docs/Firewall.md)
+ - [Models.GetAcceptedSender200Response](docs/GetAcceptedSender200Response.md)
+ - [Models.GetAnnouncement200Response](docs/GetAnnouncement200Response.md)
+ - [Models.GetCallQueue200Response](docs/GetCallQueue200Response.md)
+ - [Models.GetCallQueueAgent200Response](docs/GetCallQueueAgent200Response.md)
+ - [Models.GetChatRoom200Response](docs/GetChatRoom200Response.md)
+ - [Models.GetClient200Response](docs/GetClient200Response.md)
+ - [Models.GetConferenceRoom200Response](docs/GetConferenceRoom200Response.md)
+ - [Models.GetContact200Response](docs/GetContact200Response.md)
+ - [Models.GetConversation200Response](docs/GetConversation200Response.md)
+ - [Models.GetConversationMessage200Response](docs/GetConversationMessage200Response.md)
+ - [Models.GetCustomer200Response](docs/GetCustomer200Response.md)
+ - [Models.GetDeveloperApp200Response](docs/GetDeveloperApp200Response.md)
+ - [Models.GetDeveloperAppSubscription200Response](docs/GetDeveloperAppSubscription200Response.md)
+ - [Models.GetDomain200Response](docs/GetDomain200Response.md)
+ - [Models.GetFax200Response](docs/GetFax200Response.md)
+ - [Models.GetFaxAccount200Response](docs/GetFaxAccount200Response.md)
+ - [Models.GetFirewall200Response](docs/GetFirewall200Response.md)
+ - [Models.GetGroup200Response](docs/GetGroup200Response.md)
+ - [Models.GetGroupMember200Response](docs/GetGroupMember200Response.md)
+ - [Models.GetHoliday200Response](docs/GetHoliday200Response.md)
+ - [Models.GetInvoice200Response](docs/GetInvoice200Response.md)
+ - [Models.GetInvoiceItem200Response](docs/GetInvoiceItem200Response.md)
+ - [Models.GetLicense200Response](docs/GetLicense200Response.md)
+ - [Models.GetMenu200Response](docs/GetMenu200Response.md)
+ - [Models.GetMenuOption200Response](docs/GetMenuOption200Response.md)
+ - [Models.GetMessageBrand200Response](docs/GetMessageBrand200Response.md)
+ - [Models.GetMessageCampaign200Response](docs/GetMessageCampaign200Response.md)
+ - [Models.GetNumber200Response](docs/GetNumber200Response.md)
+ - [Models.GetNumberPort200Response](docs/GetNumberPort200Response.md)
+ - [Models.GetOffice200Response](docs/GetOffice200Response.md)
+ - [Models.GetPhoneInboundRule200Response](docs/GetPhoneInboundRule200Response.md)
+ - [Models.GetPhoneInboundRuleAction200Response](docs/GetPhoneInboundRuleAction200Response.md)
+ - [Models.GetPhoneOutboundRule200Response](docs/GetPhoneOutboundRule200Response.md)
+ - [Models.GetPhoneOutboundRuleAction200Response](docs/GetPhoneOutboundRuleAction200Response.md)
+ - [Models.GetRateCenter200Response](docs/GetRateCenter200Response.md)
+ - [Models.GetServer200Response](docs/GetServer200Response.md)
+ - [Models.GetTimeSchedule200Response](docs/GetTimeSchedule200Response.md)
+ - [Models.GetUser200Response](docs/GetUser200Response.md)
+ - [Models.GetUserToken200Response](docs/GetUserToken200Response.md)
+ - [Models.GetVirtualExtension200Response](docs/GetVirtualExtension200Response.md)
+ - [Models.Getdirectory200Response](docs/Getdirectory200Response.md)
  - [Models.Groupmembers](docs/Groupmembers.md)
  - [Models.Groups](docs/Groups.md)
  - [Models.Holidays](docs/Holidays.md)

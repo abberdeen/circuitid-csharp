@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Order** | **Object** | ObjectId (unique 12 bytes ID) | 
-**Object** | **Object** | ObjectId (unique 12 bytes ID) | 
-**Ref** | **Object** |  | 
-**Field** | **Object** |  | [optional] 
+**Order** | **string** | ObjectId (unique 12 bytes ID) | 
+**Object** | **string** | ObjectId (unique 12 bytes ID) | 
+**Ref** | **string** |  | 
+**Field** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

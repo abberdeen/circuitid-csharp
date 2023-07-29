@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Total** | **Object** |  | 
-**Limit** | **Object** |  | 
-**Skip** | **Object** |  | 
-**Data** | **Object** |  | 
+**Total** | **int** |  | 
+**Limit** | **int** |  | 
+**Skip** | **int** |  | 
+**Data** | [**List&lt;Conversations&gt;**](Conversations.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

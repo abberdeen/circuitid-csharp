@@ -5,28 +5,28 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**CampaignId** | **Object** |  | [optional] 
-**BrandId** | **Object** |  | 
-**Order** | **Object** | ObjectId (unique 12 bytes ID) | 
-**SubscriberOptin** | **Object** |  | [optional] 
-**SubscriberOptout** | **Object** |  | [optional] 
-**SubscriberHelp** | **Object** |  | [optional] 
-**NumberPool** | **Object** |  | [optional] 
-**DirectLending** | **Object** |  | [optional] 
-**EmbeddedLink** | **Object** |  | [optional] 
-**EmbeddedPhone** | **Object** |  | [optional] 
-**AffiliateMarketing** | **Object** |  | [optional] 
-**AgeGated** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**CampaignId** | **string** |  | [optional] 
+**BrandId** | **string** |  | 
+**Order** | **string** | ObjectId (unique 12 bytes ID) | 
+**SubscriberOptin** | **int** |  | [optional] 
+**SubscriberOptout** | **int** |  | [optional] 
+**SubscriberHelp** | **int** |  | [optional] 
+**NumberPool** | **int** |  | [optional] 
+**DirectLending** | **int** |  | [optional] 
+**EmbeddedLink** | **int** |  | [optional] 
+**EmbeddedPhone** | **int** |  | [optional] 
+**AffiliateMarketing** | **int** |  | [optional] 
+**AgeGated** | **int** |  | [optional] 
 **Mnos** | **Object** |  | [optional] 
-**ReferenceId** | **Object** |  | [optional] 
-**UseCase** | **Object** |  | [optional] 
-**SubUseCases** | **Object** |  | [optional] 
-**Sample1** | **Object** |  | [optional] 
-**Sample2** | **Object** |  | [optional] 
-**Sample3** | **Object** |  | [optional] 
-**Sample4** | **Object** |  | [optional] 
-**Sample5** | **Object** |  | [optional] 
+**ReferenceId** | **string** |  | [optional] 
+**UseCase** | **string** |  | [optional] 
+**SubUseCases** | **List&lt;Object&gt;** |  | [optional] 
+**Sample1** | **string** |  | [optional] 
+**Sample2** | **string** |  | [optional] 
+**Sample3** | **string** |  | [optional] 
+**Sample4** | **string** |  | [optional] 
+**Sample5** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

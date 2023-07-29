@@ -5,21 +5,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Type** | **Object** |  | 
-**TypeOfService** | **Object** |  | 
-**AuthorizedPerson** | **Object** |  | 
-**DesiredDueDate** | **Object** |  | 
-**AccountNumber** | **Object** |  | 
-**AccountPhoneNumber** | **Object** |  | 
-**Office** | **Object** | ObjectId (unique 12 bytes ID) | 
-**E911** | **Object** |  | [optional] 
-**Invoice** | **Object** | ObjectId (unique 12 bytes ID) | 
-**Status** | **Object** |  | 
-**DestinationType** | **Object** |  | 
-**Destination** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**Ref** | **Object** |  | [optional] 
-**CallForwardingDestination** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Type** | **string** |  | 
+**TypeOfService** | **string** |  | 
+**AuthorizedPerson** | **string** |  | 
+**DesiredDueDate** | **DateTime** |  | 
+**AccountNumber** | **string** |  | 
+**AccountPhoneNumber** | **string** |  | 
+**Office** | **string** | ObjectId (unique 12 bytes ID) | 
+**E911** | **int** |  | [optional] [default to E911Enum.NUMBER_0]
+**Invoice** | **string** | ObjectId (unique 12 bytes ID) | 
+**Status** | **string** |  | [default to StatusEnum.Processing]
+**DestinationType** | **string** |  | 
+**Destination** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Ref** | **string** |  | [optional] 
+**CallForwardingDestination** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

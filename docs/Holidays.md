@@ -5,15 +5,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Object** | **Object** | ObjectId (unique 12 bytes ID) | 
-**ObjectRef** | **Object** |  | 
-**DateTimeRanges** | **Object** |  | 
-**Status** | **Object** |  | [optional] 
-**DestinationType** | **Object** |  | 
-**Destination** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**Ref** | **Object** |  | [optional] 
-**CallForwardingDestination** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Object** | **string** | ObjectId (unique 12 bytes ID) | 
+**ObjectRef** | **string** |  | 
+**DateTimeRanges** | **List&lt;List&lt;DateTime&gt;&gt;** |  | 
+**Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
+**DestinationType** | **string** |  | 
+**Destination** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Ref** | **string** |  | [optional] 
+**CallForwardingDestination** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

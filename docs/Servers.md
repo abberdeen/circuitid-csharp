@@ -5,20 +5,20 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Host** | **Object** |  | 
-**Port** | **Object** |  | 
-**CallerId** | **Object** |  | [optional] 
-**Type** | **Object** |  | 
-**DomesticOutboundCallLimit** | **Object** |  | 
-**DomesticInboundCallLimit** | **Object** |  | 
-**InternationalOutboundCallLimit** | **Object** |  | 
-**TollFreeChannelLimit** | **Object** |  | 
-**InboundSipTrunkingOrder** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**OutboundSipTrunkingOrder** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**NoInstantRingBack** | **Object** |  | [optional] 
-**BypassMedia** | **Object** |  | [optional] 
-**DisableRTPAutoAdjust** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Host** | **string** |  | 
+**Port** | **int** |  | [default to 5060]
+**CallerId** | **string** |  | [optional] 
+**Type** | **string** |  | 
+**DomesticOutboundCallLimit** | **int** |  | [default to 10]
+**DomesticInboundCallLimit** | **int** |  | [default to 10]
+**InternationalOutboundCallLimit** | **int** |  | [default to 10]
+**TollFreeChannelLimit** | **int** |  | [default to 10]
+**InboundSipTrunkingOrder** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**OutboundSipTrunkingOrder** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**NoInstantRingBack** | **int** |  | [optional] 
+**BypassMedia** | **int** |  | [optional] [default to BypassMediaEnum.NUMBER_0]
+**DisableRTPAutoAdjust** | **int** |  | [optional] [default to DisableRTPAutoAdjustEnum.NUMBER_0]
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

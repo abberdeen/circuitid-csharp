@@ -5,11 +5,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | [optional] 
-**Message** | **Object** |  | [optional] 
-**Code** | **Object** |  | [optional] 
-**ClassName** | **Object** |  | [optional] 
-**Errors** | **Object** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**Message** | **string** |  | [optional] 
+**Code** | **int** |  | [optional] 
+**ClassName** | **string** |  | [optional] 
+**Errors** | **List&lt;string&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

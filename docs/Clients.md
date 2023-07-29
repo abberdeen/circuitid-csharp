@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**User** | **Object** | ObjectId (unique 12 bytes ID) | 
-**Mac** | **Object** |  | 
-**HttpUserAgent** | **Object** |  | [optional] 
-**Manufacture** | **Object** |  | [optional] 
-**Status** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**User** | **string** | ObjectId (unique 12 bytes ID) | 
+**Mac** | **string** |  | 
+**HttpUserAgent** | **string** |  | [optional] 
+**Manufacture** | **string** |  | [optional] 
+**Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

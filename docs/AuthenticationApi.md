@@ -1,6 +1,6 @@
 # Com.CircuitID.Api.AuthenticationApi
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## CreateAuthentication
 
-> Object CreateAuthentication (Authentication authentication)
+> CreateAuthentication200Response CreateAuthentication (Authentication authentication)
 
 Create a new object
 
@@ -31,7 +31,7 @@ namespace Example
     {
         public static void Main()
         {
-            Configuration.Default.BasePath = "https://cloud9.circuitid.com";
+            Configuration.Default.BasePath = "https://rest.circuitid.com";
             // Configure API key authorization: jwt
             Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -43,7 +43,7 @@ namespace Example
             try
             {
                 // Create a new object
-                Object result = apiInstance.CreateAuthentication(authentication);
+                CreateAuthentication200Response result = apiInstance.CreateAuthentication(authentication);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**Object**
+[**CreateAuthentication200Response**](CreateAuthentication200Response.md)
 
 ### Authorization
 
@@ -82,15 +82,15 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the new object created |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 [[Back to top]](#)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

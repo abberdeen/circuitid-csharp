@@ -5,23 +5,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Group** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**Phoneoutboundrule** | **Object** | ObjectId (unique 12 bytes ID) | 
-**Status** | **Object** |  | [optional] 
-**Priority** | **Object** |  | 
-**StartingChars** | **Object** |  | [optional] 
-**Contains** | **Object** |  | [optional] 
-**LengthType** | **Object** |  | [optional] 
-**Length** | **Object** |  | [optional] 
-**AppendChars** | **Object** |  | [optional] 
-**PrependChars** | **Object** |  | [optional] 
-**RangeStart** | **Object** |  | [optional] 
-**RangeEnd** | **Object** |  | [optional] 
-**RemoveStartingChars** | **Object** |  | [optional] 
-**RemoveEndingChars** | **Object** |  | [optional] 
-**Route** | **Object** |  | 
-**RoutingType** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Group** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Phoneoutboundrule** | **string** | ObjectId (unique 12 bytes ID) | 
+**Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
+**Priority** | **int** |  | [default to 1]
+**StartingChars** | **string** |  | [optional] 
+**Contains** | **string** |  | [optional] 
+**LengthType** | **string** |  | [optional] 
+**Length** | **int** |  | [optional] 
+**AppendChars** | **string** |  | [optional] 
+**PrependChars** | **string** |  | [optional] 
+**RangeStart** | **int** |  | [optional] 
+**RangeEnd** | **int** |  | [optional] 
+**RemoveStartingChars** | **int** |  | [optional] 
+**RemoveEndingChars** | **int** |  | [optional] 
+**Route** | **string** |  | [default to RouteEnum.Default]
+**RoutingType** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -5,41 +5,41 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Email** | **Object** |  | 
-**Password** | **Object** |  | 
-**SipPassword** | **Object** |  | 
-**TurnPassword** | **Object** |  | [optional] 
-**First** | **Object** |  | 
-**Last** | **Object** |  | 
-**MobilePhone** | **Object** |  | [optional] 
-**BusinessPhone** | **Object** |  | [optional] 
-**Extension** | **Object** |  | [optional] 
-**CustomCallerId** | **Object** |  | [optional] 
-**JobTitle** | **Object** |  | [optional] 
-**Department** | **Object** |  | [optional] 
-**Office** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**Avatar** | **Object** |  | [optional] 
-**Language** | **Object** |  | [optional] 
-**IsPrimary** | **Object** |  | [optional] 
-**Status** | **Object** |  | [optional] 
-**VmGreetingType** | **Object** |  | [optional] 
-**VmTimeout** | **Object** |  | [optional] 
-**VmFile** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**VmPlaybackNumber** | **Object** |  | [optional] 
-**Pin** | **Object** |  | [optional] 
-**Number** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**Region** | **Object** | ObjectId (unique 12 bytes ID) | [optional] 
-**CallerIdNumber** | **Object** |  | [optional] 
-**AdminPermission** | **Object** |  | [optional] 
-**BillingPermission** | **Object** |  | [optional] 
-**PhonePermission** | **Object** |  | [optional] 
-**AgilePermission** | **Object** |  | [optional] 
-**JobServerPermission** | **Object** |  | [optional] 
-**MediaServerPermission** | **Object** |  | [optional] 
-**MailServerPermission** | **Object** |  | [optional] 
-**SuperAdminPermission** | **Object** |  | [optional] 
-**Timezone** | **Object** |  | 
-**VmTranscription** | **Object** |  | [optional] 
+**Email** | **string** |  | 
+**Password** | **string** |  | 
+**SipPassword** | **string** |  | 
+**TurnPassword** | **string** |  | [optional] 
+**First** | **string** |  | 
+**Last** | **string** |  | 
+**MobilePhone** | **string** |  | [optional] 
+**BusinessPhone** | **string** |  | [optional] 
+**Extension** | **int** |  | [optional] 
+**CustomCallerId** | **int** |  | [optional] 
+**JobTitle** | **string** |  | [optional] 
+**Department** | **string** |  | [optional] 
+**Office** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Avatar** | **string** |  | [optional] 
+**Language** | **string** |  | [optional] [default to LanguageEnum.En]
+**IsPrimary** | **int** |  | [optional] [default to IsPrimaryEnum.NUMBER_0]
+**Status** | **string** |  | [optional] [default to StatusEnum.Active]
+**VmGreetingType** | **string** |  | [optional] [default to VmGreetingTypeEnum.Default]
+**VmTimeout** | **int** |  | [optional] [default to 20]
+**VmFile** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**VmPlaybackNumber** | **string** |  | [optional] 
+**Pin** | **int** |  | [optional] [default to 1234]
+**Number** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Region** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**CallerIdNumber** | **string** |  | [optional] 
+**AdminPermission** | **string** |  | [optional] 
+**BillingPermission** | **string** |  | [optional] 
+**PhonePermission** | **string** |  | [optional] 
+**AgilePermission** | **string** |  | [optional] 
+**JobServerPermission** | **string** |  | [optional] 
+**MediaServerPermission** | **string** |  | [optional] 
+**MailServerPermission** | **string** |  | [optional] 
+**SuperAdminPermission** | **string** |  | [optional] 
+**Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
+**VmTranscription** | **int** |  | [optional] [default to VmTranscriptionEnum.NUMBER_0]
 **Communication** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

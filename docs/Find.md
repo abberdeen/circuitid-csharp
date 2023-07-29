@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Total** | **Object** |  | 
-**Limit** | **Object** |  | 
-**Skip** | **Object** |  | [optional] 
+**Total** | **int** |  | 
+**Limit** | **int** |  | 
+**Skip** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

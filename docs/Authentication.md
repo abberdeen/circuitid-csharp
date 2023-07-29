@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Username** | **Object** |  | 
-**Password** | **Object** |  | 
-**Strategy** | **Object** |  | 
+**Username** | **string** |  | 
+**Password** | **string** |  | 
+**Strategy** | **string** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

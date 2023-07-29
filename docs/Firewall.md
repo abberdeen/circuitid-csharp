@@ -5,17 +5,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Description** | **Object** |  | [optional] 
-**Priority** | **Object** |  | 
-**Type** | **Object** |  | 
-**Target** | **Object** |  | 
-**Direction** | **Object** |  | [optional] 
-**Param** | **Object** |  | 
-**Hits** | **Object** |  | [optional] 
-**Ai** | **Object** |  | [optional] 
-**Status** | **Object** |  | [optional] 
-**NotificationHits** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Description** | **string** |  | [optional] 
+**Priority** | **int** |  | 
+**Type** | **string** |  | 
+**Target** | **string** |  | 
+**Direction** | **string** |  | [optional] 
+**Param** | **string** |  | 
+**Hits** | **int** |  | [optional] 
+**Ai** | **int** |  | [optional] [default to AiEnum.NUMBER_0]
+**Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
+**NotificationHits** | **int** |  | [optional] [default to 1]
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Timezone** | **Object** |  | 
+**Name** | **string** |  | 
+**Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
 **Sunday** | **Object** |  | 
 **Monday** | **Object** |  | 
 **Tuesday** | **Object** |  | 

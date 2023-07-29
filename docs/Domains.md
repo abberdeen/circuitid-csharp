@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Name** | **Object** |  | 
-**Status** | **Object** |  | [optional] 
+**Name** | **string** |  | 
+**Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_0]
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
