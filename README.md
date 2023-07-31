@@ -10,7 +10,7 @@ We are excited to have you on board and are confident that this documentation si
 Happy coding!
 
 
-- API version: 0.47.20
+- API version: 0.47.21
 - SDK version: 1.0.0
 
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -449,9 +449,7 @@ Class | Method | HTTP request | Description
  - [Models.HolidaysCreateOrPatch](docs/HolidaysCreateOrPatch.md)
  - [Models.Id](docs/Id.md)
  - [Models.Invoiceitems](docs/Invoiceitems.md)
- - [Models.InvoiceitemsCreateOrPatch](docs/InvoiceitemsCreateOrPatch.md)
  - [Models.Invoices](docs/Invoices.md)
- - [Models.InvoicesCreateOrPatch](docs/InvoicesCreateOrPatch.md)
  - [Models.Licenses](docs/Licenses.md)
  - [Models.LicensesCreateOrPatch](docs/LicensesCreateOrPatch.md)
  - [Models.Menuoptions](docs/Menuoptions.md)
@@ -477,7 +475,6 @@ Class | Method | HTTP request | Description
  - [Models.Phoneoutboundrules](docs/Phoneoutboundrules.md)
  - [Models.PhoneoutboundrulesCreateOrPatch](docs/PhoneoutboundrulesCreateOrPatch.md)
  - [Models.Ratecenters](docs/Ratecenters.md)
- - [Models.RatecentersCreateOrPatch](docs/RatecentersCreateOrPatch.md)
  - [Models.ResponseDate](docs/ResponseDate.md)
  - [Models.ResponseError](docs/ResponseError.md)
  - [Models.ResponseUsers](docs/ResponseUsers.md)

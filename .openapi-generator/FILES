@@ -164,10 +164,8 @@ docs/Id.md
 docs/InfoApi.md
 docs/InvoiceItemsApi.md
 docs/Invoiceitems.md
-docs/InvoiceitemsCreateOrPatch.md
 docs/Invoices.md
 docs/InvoicesApi.md
-docs/InvoicesCreateOrPatch.md
 docs/Licenses.md
 docs/LicensesApi.md
 docs/LicensesCreateOrPatch.md
@@ -206,7 +204,6 @@ docs/Phoneoutboundrules.md
 docs/PhoneoutboundrulesCreateOrPatch.md
 docs/RateCentersApi.md
 docs/Ratecenters.md
-docs/RatecentersCreateOrPatch.md
 docs/ResponseDate.md
 docs/ResponseError.md
 docs/ResponseUsers.md
@@ -409,9 +406,7 @@ src/Com.CircuitID.Test/Models/GroupsTests.cs
 src/Com.CircuitID.Test/Models/HolidaysCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/HolidaysTests.cs
 src/Com.CircuitID.Test/Models/IdTests.cs
-src/Com.CircuitID.Test/Models/InvoiceitemsCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/InvoiceitemsTests.cs
-src/Com.CircuitID.Test/Models/InvoicesCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/InvoicesTests.cs
 src/Com.CircuitID.Test/Models/LicensesCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/LicensesTests.cs
@@ -437,7 +432,6 @@ src/Com.CircuitID.Test/Models/PhoneoutboundruleactionsCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/PhoneoutboundruleactionsTests.cs
 src/Com.CircuitID.Test/Models/PhoneoutboundrulesCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/PhoneoutboundrulesTests.cs
-src/Com.CircuitID.Test/Models/RatecentersCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/RatecentersTests.cs
 src/Com.CircuitID.Test/Models/ResponseDateTests.cs
 src/Com.CircuitID.Test/Models/ResponseErrorTests.cs
@@ -645,9 +639,7 @@ src/Com.CircuitID/Models/Holidays.cs
 src/Com.CircuitID/Models/HolidaysCreateOrPatch.cs
 src/Com.CircuitID/Models/Id.cs
 src/Com.CircuitID/Models/Invoiceitems.cs
-src/Com.CircuitID/Models/InvoiceitemsCreateOrPatch.cs
 src/Com.CircuitID/Models/Invoices.cs
-src/Com.CircuitID/Models/InvoicesCreateOrPatch.cs
 src/Com.CircuitID/Models/Licenses.cs
 src/Com.CircuitID/Models/LicensesCreateOrPatch.cs
 src/Com.CircuitID/Models/Menuoptions.cs
@@ -673,7 +665,6 @@ src/Com.CircuitID/Models/PhoneoutboundruleactionsCreateOrPatch.cs
 src/Com.CircuitID/Models/Phoneoutboundrules.cs
 src/Com.CircuitID/Models/PhoneoutboundrulesCreateOrPatch.cs
 src/Com.CircuitID/Models/Ratecenters.cs
-src/Com.CircuitID/Models/RatecentersCreateOrPatch.cs
 src/Com.CircuitID/Models/ResponseDate.cs
 src/Com.CircuitID/Models/ResponseError.cs
 src/Com.CircuitID/Models/ResponseUsers.cs
