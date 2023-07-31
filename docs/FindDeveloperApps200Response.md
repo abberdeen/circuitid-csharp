@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Total** | **int** |  | 
 **Limit** | **int** |  | 
 **Skip** | **int** |  | 
-**Data** | [**List&lt;Developerapps&gt;**](Developerapps.md) |  | 
+**Data** | [**List&lt;GetDeveloperApp200Response&gt;**](GetDeveloperApp200Response.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

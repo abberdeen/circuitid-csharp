@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateGroupMember
 
-> GetGroupMember200Response CreateGroupMember (Groupmembers groupmembers)
+> GetGroupMember200Response CreateGroupMember (GroupmembersCreateOrPatch groupmembersCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new GroupMembersApi(Configuration.Default);
-            var groupmembers = new Groupmembers(); // Groupmembers | The JSON object that will be posted to the REST API endpoint.
+            var groupmembersCreateOrPatch = new GroupmembersCreateOrPatch(); // GroupmembersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetGroupMember200Response result = apiInstance.CreateGroupMember(groupmembers);
+                GetGroupMember200Response result = apiInstance.CreateGroupMember(groupmembersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **groupmembers** | [**Groupmembers**](Groupmembers.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **groupmembersCreateOrPatch** | [**GroupmembersCreateOrPatch**](GroupmembersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchGroupMember
 
-> GetGroupMember200Response PatchGroupMember (string id, Groupmembers groupmembers)
+> GetGroupMember200Response PatchGroupMember (string id, GroupmembersCreateOrPatch groupmembersCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new GroupMembersApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var groupmembers = new Groupmembers(); // Groupmembers | The request data.
+            var groupmembersCreateOrPatch = new GroupmembersCreateOrPatch(); // GroupmembersCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetGroupMember200Response result = apiInstance.PatchGroupMember(id, groupmembers);
+                GetGroupMember200Response result = apiInstance.PatchGroupMember(id, groupmembersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **groupmembers** | [**Groupmembers**](Groupmembers.md)| The request data. | 
+ **groupmembersCreateOrPatch** | [**GroupmembersCreateOrPatch**](GroupmembersCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

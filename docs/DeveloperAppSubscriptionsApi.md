@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateDeveloperAppSubscription
 
-> GetDeveloperAppSubscription200Response CreateDeveloperAppSubscription (Developerappsubscriptions developerappsubscriptions)
+> GetDeveloperAppSubscription200Response CreateDeveloperAppSubscription (DeveloperappsubscriptionsCreateOrPatch developerappsubscriptionsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DeveloperAppSubscriptionsApi(Configuration.Default);
-            var developerappsubscriptions = new Developerappsubscriptions(); // Developerappsubscriptions | The JSON object that will be posted to the REST API endpoint.
+            var developerappsubscriptionsCreateOrPatch = new DeveloperappsubscriptionsCreateOrPatch(); // DeveloperappsubscriptionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetDeveloperAppSubscription200Response result = apiInstance.CreateDeveloperAppSubscription(developerappsubscriptions);
+                GetDeveloperAppSubscription200Response result = apiInstance.CreateDeveloperAppSubscription(developerappsubscriptionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **developerappsubscriptions** | [**Developerappsubscriptions**](Developerappsubscriptions.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **developerappsubscriptionsCreateOrPatch** | [**DeveloperappsubscriptionsCreateOrPatch**](DeveloperappsubscriptionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchDeveloperAppSubscription
 
-> GetDeveloperAppSubscription200Response PatchDeveloperAppSubscription (string id, Developerappsubscriptions developerappsubscriptions)
+> GetDeveloperAppSubscription200Response PatchDeveloperAppSubscription (string id, DeveloperappsubscriptionsCreateOrPatch developerappsubscriptionsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new DeveloperAppSubscriptionsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var developerappsubscriptions = new Developerappsubscriptions(); // Developerappsubscriptions | The request data.
+            var developerappsubscriptionsCreateOrPatch = new DeveloperappsubscriptionsCreateOrPatch(); // DeveloperappsubscriptionsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetDeveloperAppSubscription200Response result = apiInstance.PatchDeveloperAppSubscription(id, developerappsubscriptions);
+                GetDeveloperAppSubscription200Response result = apiInstance.PatchDeveloperAppSubscription(id, developerappsubscriptionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **developerappsubscriptions** | [**Developerappsubscriptions**](Developerappsubscriptions.md)| The request data. | 
+ **developerappsubscriptionsCreateOrPatch** | [**DeveloperappsubscriptionsCreateOrPatch**](DeveloperappsubscriptionsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

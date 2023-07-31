@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Description** | **string** |  | [optional] 
 **Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
 **OutboundCallerId** | **string** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Total** | **int** |  | 
 **Limit** | **int** |  | 
 **Skip** | **int** |  | 
-**Data** | [**List&lt;Servers&gt;**](Servers.md) |  | 
+**Data** | [**List&lt;GetServer200Response&gt;**](GetServer200Response.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

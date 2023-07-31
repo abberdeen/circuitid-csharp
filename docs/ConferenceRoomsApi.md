@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateConferenceRoom
 
-> GetConferenceRoom200Response CreateConferenceRoom (Conferencerooms conferencerooms)
+> GetConferenceRoom200Response CreateConferenceRoom (ConferenceroomsCreateOrPatch conferenceroomsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ConferenceRoomsApi(Configuration.Default);
-            var conferencerooms = new Conferencerooms(); // Conferencerooms | The JSON object that will be posted to the REST API endpoint.
+            var conferenceroomsCreateOrPatch = new ConferenceroomsCreateOrPatch(); // ConferenceroomsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetConferenceRoom200Response result = apiInstance.CreateConferenceRoom(conferencerooms);
+                GetConferenceRoom200Response result = apiInstance.CreateConferenceRoom(conferenceroomsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conferencerooms** | [**Conferencerooms**](Conferencerooms.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **conferenceroomsCreateOrPatch** | [**ConferenceroomsCreateOrPatch**](ConferenceroomsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchConferenceRoom
 
-> GetConferenceRoom200Response PatchConferenceRoom (string id, Conferencerooms conferencerooms)
+> GetConferenceRoom200Response PatchConferenceRoom (string id, ConferenceroomsCreateOrPatch conferenceroomsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new ConferenceRoomsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var conferencerooms = new Conferencerooms(); // Conferencerooms | The request data.
+            var conferenceroomsCreateOrPatch = new ConferenceroomsCreateOrPatch(); // ConferenceroomsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetConferenceRoom200Response result = apiInstance.PatchConferenceRoom(id, conferencerooms);
+                GetConferenceRoom200Response result = apiInstance.PatchConferenceRoom(id, conferenceroomsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **conferencerooms** | [**Conferencerooms**](Conferencerooms.md)| The request data. | 
+ **conferenceroomsCreateOrPatch** | [**ConferenceroomsCreateOrPatch**](ConferenceroomsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

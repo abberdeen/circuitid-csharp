@@ -12,12 +12,11 @@ Name | Type | Description | Notes
 **StreetSuffix** | **string** |  | 
 **City** | **string** |  | 
 **State** | **string** |  | [optional] 
-**Zip** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **ZipCode** | **string** |  | [optional] 
 **Address2** | **string** |  | [optional] 
 **Country** | **string** |  | 
-**Providers** | **Object** |  | [optional] 
 **Region** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

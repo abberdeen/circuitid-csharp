@@ -6,23 +6,17 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
-**Status** | **string** |  | [optional] [default to StatusEnum.Active]
 **WebsiteUrl** | **string** |  | [optional] 
 **Logo** | **string** |  | [optional] 
 **Credit** | **int** |  | [optional] [default to 0]
 **AdminUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **BillingUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CallRecordingUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
-**CallForwardingCallLimit** | **int** |  | [optional] [default to 10]
 **SupportUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **AutomaticRefillAmount** | **int** |  | [optional] [default to 0]
 **LowBalanceAlertAmount** | **int** |  | [optional] [default to 0]
-**LowBalanceAlertAt** | **DateTime** |  | [optional] 
-**LowBalanceAlertCount** | **int** |  | [optional] [default to 0]
-**LastAutomaticRefillInvoice** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **InternationalCalling** | **int** |  | [optional] [default to InternationalCallingEnum.NUMBER_0]
 **CreatedByIP** | **string** |  | [optional] 
-**CallDebug** | **int** |  | [optional] [default to CallDebugEnum.NUMBER_0]
 **MediaBypass** | **int** |  | [optional] [default to MediaBypassEnum.NUMBER_0]
 **AccountLock** | **int** |  | [optional] [default to AccountLockEnum.NUMBER_1]
 **CallRecording** | **int** |  | [optional] [default to CallRecordingEnum.NUMBER_0]

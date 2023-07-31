@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **CspId** | **string** |  | [optional] 
 **EinIssuingCountry** | **string** |  | [optional] 
 **UniversalEin** | **string** |  | [optional] 
-**ReferenceId** | **string** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

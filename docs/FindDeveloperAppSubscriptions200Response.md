@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Total** | **int** |  | 
 **Limit** | **int** |  | 
 **Skip** | **int** |  | 
-**Data** | [**List&lt;Developerappsubscriptions&gt;**](Developerappsubscriptions.md) |  | 
+**Data** | [**List&lt;GetDeveloperAppSubscription200Response&gt;**](GetDeveloperAppSubscription200Response.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

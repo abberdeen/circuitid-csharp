@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateTimeSchedule
 
-> GetTimeSchedule200Response CreateTimeSchedule (Timeschedules timeschedules)
+> GetTimeSchedule200Response CreateTimeSchedule (TimeschedulesCreateOrPatch timeschedulesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new TimeSchedulesApi(Configuration.Default);
-            var timeschedules = new Timeschedules(); // Timeschedules | The JSON object that will be posted to the REST API endpoint.
+            var timeschedulesCreateOrPatch = new TimeschedulesCreateOrPatch(); // TimeschedulesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetTimeSchedule200Response result = apiInstance.CreateTimeSchedule(timeschedules);
+                GetTimeSchedule200Response result = apiInstance.CreateTimeSchedule(timeschedulesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **timeschedules** | [**Timeschedules**](Timeschedules.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **timeschedulesCreateOrPatch** | [**TimeschedulesCreateOrPatch**](TimeschedulesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchTimeSchedule
 
-> GetTimeSchedule200Response PatchTimeSchedule (string id, Timeschedules timeschedules)
+> GetTimeSchedule200Response PatchTimeSchedule (string id, TimeschedulesCreateOrPatch timeschedulesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new TimeSchedulesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var timeschedules = new Timeschedules(); // Timeschedules | The request data.
+            var timeschedulesCreateOrPatch = new TimeschedulesCreateOrPatch(); // TimeschedulesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetTimeSchedule200Response result = apiInstance.PatchTimeSchedule(id, timeschedules);
+                GetTimeSchedule200Response result = apiInstance.PatchTimeSchedule(id, timeschedulesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **timeschedules** | [**Timeschedules**](Timeschedules.md)| The request data. | 
+ **timeschedulesCreateOrPatch** | [**TimeschedulesCreateOrPatch**](TimeschedulesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

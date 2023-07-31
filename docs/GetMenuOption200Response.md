@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **Destination** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **Ref** | **string** |  | [optional] 
 **CallForwardingDestination** | **string** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

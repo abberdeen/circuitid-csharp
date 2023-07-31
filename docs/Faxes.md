@@ -5,6 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Attachments** | **List&lt;string&gt;** |  | [optional] 
+**CallerDestinations** | **List&lt;string&gt;** |  | 
 **CallerIdNumber** | **string** |  | 
 **CallerDestination** | **string** |  | 
 **Pages** | **int** |  | [optional] [default to 0]

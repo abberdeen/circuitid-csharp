@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateMenu
 
-> GetMenu200Response CreateMenu (Menus menus)
+> GetMenu200Response CreateMenu (MenusCreateOrPatch menusCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new MenusApi(Configuration.Default);
-            var menus = new Menus(); // Menus | The JSON object that will be posted to the REST API endpoint.
+            var menusCreateOrPatch = new MenusCreateOrPatch(); // MenusCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetMenu200Response result = apiInstance.CreateMenu(menus);
+                GetMenu200Response result = apiInstance.CreateMenu(menusCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **menus** | [**Menus**](Menus.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **menusCreateOrPatch** | [**MenusCreateOrPatch**](MenusCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchMenu
 
-> GetMenu200Response PatchMenu (string id, Menus menus)
+> GetMenu200Response PatchMenu (string id, MenusCreateOrPatch menusCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new MenusApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var menus = new Menus(); // Menus | The request data.
+            var menusCreateOrPatch = new MenusCreateOrPatch(); // MenusCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetMenu200Response result = apiInstance.PatchMenu(id, menus);
+                GetMenu200Response result = apiInstance.PatchMenu(id, menusCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **menus** | [**Menus**](Menus.md)| The request data. | 
+ **menusCreateOrPatch** | [**MenusCreateOrPatch**](MenusCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -17,7 +17,6 @@ Name | Type | Description | Notes
 **CspId** | **string** |  | [optional] 
 **EinIssuingCountry** | **string** |  | [optional] 
 **UniversalEin** | **string** |  | [optional] 
-**ReferenceId** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

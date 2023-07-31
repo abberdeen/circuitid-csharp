@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreatePhoneOutboundRule
 
-> GetPhoneOutboundRule200Response CreatePhoneOutboundRule (Phoneoutboundrules phoneoutboundrules)
+> GetPhoneOutboundRule200Response CreatePhoneOutboundRule (PhoneoutboundrulesCreateOrPatch phoneoutboundrulesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new PhoneOutboundRulesApi(Configuration.Default);
-            var phoneoutboundrules = new Phoneoutboundrules(); // Phoneoutboundrules | The JSON object that will be posted to the REST API endpoint.
+            var phoneoutboundrulesCreateOrPatch = new PhoneoutboundrulesCreateOrPatch(); // PhoneoutboundrulesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetPhoneOutboundRule200Response result = apiInstance.CreatePhoneOutboundRule(phoneoutboundrules);
+                GetPhoneOutboundRule200Response result = apiInstance.CreatePhoneOutboundRule(phoneoutboundrulesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phoneoutboundrules** | [**Phoneoutboundrules**](Phoneoutboundrules.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **phoneoutboundrulesCreateOrPatch** | [**PhoneoutboundrulesCreateOrPatch**](PhoneoutboundrulesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchPhoneOutboundRule
 
-> GetPhoneOutboundRule200Response PatchPhoneOutboundRule (string id, Phoneoutboundrules phoneoutboundrules)
+> GetPhoneOutboundRule200Response PatchPhoneOutboundRule (string id, PhoneoutboundrulesCreateOrPatch phoneoutboundrulesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new PhoneOutboundRulesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var phoneoutboundrules = new Phoneoutboundrules(); // Phoneoutboundrules | The request data.
+            var phoneoutboundrulesCreateOrPatch = new PhoneoutboundrulesCreateOrPatch(); // PhoneoutboundrulesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetPhoneOutboundRule200Response result = apiInstance.PatchPhoneOutboundRule(id, phoneoutboundrules);
+                GetPhoneOutboundRule200Response result = apiInstance.PatchPhoneOutboundRule(id, phoneoutboundrulesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **phoneoutboundrules** | [**Phoneoutboundrules**](Phoneoutboundrules.md)| The request data. | 
+ **phoneoutboundrulesCreateOrPatch** | [**PhoneoutboundrulesCreateOrPatch**](PhoneoutboundrulesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

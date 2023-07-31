@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Token** | **string** |  | 
 **ExpiresInYears** | **int** |  | [default to 1]
 **Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

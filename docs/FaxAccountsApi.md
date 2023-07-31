@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateFaxAccount
 
-> GetFaxAccount200Response CreateFaxAccount (Faxaccounts faxaccounts)
+> GetFaxAccount200Response CreateFaxAccount (FaxaccountsCreateOrPatch faxaccountsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new FaxAccountsApi(Configuration.Default);
-            var faxaccounts = new Faxaccounts(); // Faxaccounts | The JSON object that will be posted to the REST API endpoint.
+            var faxaccountsCreateOrPatch = new FaxaccountsCreateOrPatch(); // FaxaccountsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetFaxAccount200Response result = apiInstance.CreateFaxAccount(faxaccounts);
+                GetFaxAccount200Response result = apiInstance.CreateFaxAccount(faxaccountsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **faxaccounts** | [**Faxaccounts**](Faxaccounts.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **faxaccountsCreateOrPatch** | [**FaxaccountsCreateOrPatch**](FaxaccountsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchFaxAccount
 
-> GetFaxAccount200Response PatchFaxAccount (string id, Faxaccounts faxaccounts)
+> GetFaxAccount200Response PatchFaxAccount (string id, FaxaccountsCreateOrPatch faxaccountsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new FaxAccountsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var faxaccounts = new Faxaccounts(); // Faxaccounts | The request data.
+            var faxaccountsCreateOrPatch = new FaxaccountsCreateOrPatch(); // FaxaccountsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetFaxAccount200Response result = apiInstance.PatchFaxAccount(id, faxaccounts);
+                GetFaxAccount200Response result = apiInstance.PatchFaxAccount(id, faxaccountsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **faxaccounts** | [**Faxaccounts**](Faxaccounts.md)| The request data. | 
+ **faxaccountsCreateOrPatch** | [**FaxaccountsCreateOrPatch**](FaxaccountsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

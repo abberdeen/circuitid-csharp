@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## Createdirectory
 
-> Getdirectory200Response Createdirectory (Directories directories)
+> Getdirectory200Response Createdirectory (DirectoriesCreateOrPatch directoriesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DirectoriesApi(Configuration.Default);
-            var directories = new Directories(); // Directories | The JSON object that will be posted to the REST API endpoint.
+            var directoriesCreateOrPatch = new DirectoriesCreateOrPatch(); // DirectoriesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                Getdirectory200Response result = apiInstance.Createdirectory(directories);
+                Getdirectory200Response result = apiInstance.Createdirectory(directoriesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **directories** | [**Directories**](Directories.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **directoriesCreateOrPatch** | [**DirectoriesCreateOrPatch**](DirectoriesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## Patchdirectory
 
-> Getdirectory200Response Patchdirectory (string id, Directories directories)
+> Getdirectory200Response Patchdirectory (string id, DirectoriesCreateOrPatch directoriesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new DirectoriesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var directories = new Directories(); // Directories | The request data.
+            var directoriesCreateOrPatch = new DirectoriesCreateOrPatch(); // DirectoriesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                Getdirectory200Response result = apiInstance.Patchdirectory(id, directories);
+                Getdirectory200Response result = apiInstance.Patchdirectory(id, directoriesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **directories** | [**Directories**](Directories.md)| The request data. | 
+ **directoriesCreateOrPatch** | [**DirectoriesCreateOrPatch**](DirectoriesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateUserToken
 
-> GetUserToken200Response CreateUserToken (Usertokens usertokens)
+> GetUserToken200Response CreateUserToken (UsertokensCreateOrPatch usertokensCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new UserTokensApi(Configuration.Default);
-            var usertokens = new Usertokens(); // Usertokens | The JSON object that will be posted to the REST API endpoint.
+            var usertokensCreateOrPatch = new UsertokensCreateOrPatch(); // UsertokensCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetUserToken200Response result = apiInstance.CreateUserToken(usertokens);
+                GetUserToken200Response result = apiInstance.CreateUserToken(usertokensCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **usertokens** | [**Usertokens**](Usertokens.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **usertokensCreateOrPatch** | [**UsertokensCreateOrPatch**](UsertokensCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchUserToken
 
-> GetUserToken200Response PatchUserToken (string id, Usertokens usertokens)
+> GetUserToken200Response PatchUserToken (string id, UsertokensCreateOrPatch usertokensCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new UserTokensApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var usertokens = new Usertokens(); // Usertokens | The request data.
+            var usertokensCreateOrPatch = new UsertokensCreateOrPatch(); // UsertokensCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetUserToken200Response result = apiInstance.PatchUserToken(id, usertokens);
+                GetUserToken200Response result = apiInstance.PatchUserToken(id, usertokensCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **usertokens** | [**Usertokens**](Usertokens.md)| The request data. | 
+ **usertokensCreateOrPatch** | [**UsertokensCreateOrPatch**](UsertokensCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

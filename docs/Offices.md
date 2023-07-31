@@ -12,11 +12,9 @@ Name | Type | Description | Notes
 **StreetSuffix** | **string** |  | 
 **City** | **string** |  | 
 **State** | **string** |  | [optional] 
-**Zip** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **ZipCode** | **string** |  | [optional] 
 **Address2** | **string** |  | [optional] 
 **Country** | **string** |  | 
-**Providers** | **Object** |  | [optional] 
 **Region** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

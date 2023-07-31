@@ -205,7 +205,7 @@ Name | Type | Description  | Notes
 
 ## PatchNumber
 
-> GetNumber200Response PatchNumber (string id, Numbers numbers)
+> GetNumber200Response PatchNumber (string id, NumbersCreateOrPatch numbersCreateOrPatch)
 
 Patch object's data
 
@@ -234,12 +234,12 @@ namespace Example
 
             var apiInstance = new NumbersApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var numbers = new Numbers(); // Numbers | The request data.
+            var numbersCreateOrPatch = new NumbersCreateOrPatch(); // NumbersCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetNumber200Response result = apiInstance.PatchNumber(id, numbers);
+                GetNumber200Response result = apiInstance.PatchNumber(id, numbersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -259,7 +259,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **numbers** | [**Numbers**](Numbers.md)| The request data. | 
+ **numbersCreateOrPatch** | [**NumbersCreateOrPatch**](NumbersCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

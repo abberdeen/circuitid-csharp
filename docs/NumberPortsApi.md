@@ -7,13 +7,12 @@ Method | HTTP request | Description
 [**CreateNumberPort**](NumberPortsApi.md#createnumberport) | **POST** /numberports | Create a new object
 [**FindNumberPorts**](NumberPortsApi.md#findnumberports) | **GET** /numberports | Find multiple objects
 [**GetNumberPort**](NumberPortsApi.md#getnumberport) | **GET** /numberports/{id} | Get object by id
-[**PatchNumberPort**](NumberPortsApi.md#patchnumberport) | **PATCH** /numberports/{id} | Patch object&#39;s data
 
 
 
 ## CreateNumberPort
 
-> GetNumberPort200Response CreateNumberPort (Numberports numberports)
+> GetNumberPort200Response CreateNumberPort (NumberportsCreateOrPatch numberportsCreateOrPatch)
 
 Create a new object
 
@@ -41,12 +40,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new NumberPortsApi(Configuration.Default);
-            var numberports = new Numberports(); // Numberports | The JSON object that will be posted to the REST API endpoint.
+            var numberportsCreateOrPatch = new NumberportsCreateOrPatch(); // NumberportsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetNumberPort200Response result = apiInstance.CreateNumberPort(numberports);
+                GetNumberPort200Response result = apiInstance.CreateNumberPort(numberportsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -65,7 +64,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **numberports** | [**Numberports**](Numberports.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **numberportsCreateOrPatch** | [**NumberportsCreateOrPatch**](NumberportsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -281,98 +280,6 @@ Name | Type | Description  | Notes
 | **401** | Not Authenticated |  -  |
 | **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## PatchNumberPort
-
-> GetNumberPort200Response PatchNumberPort (string id, Numberports numberports)
-
-Patch object's data
-
-Make updates to specific fields within the record without replacing the entire dataset.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Com.CircuitID.Api;
-using Com.CircuitID.Client;
-using Com.CircuitID.Models;
-
-namespace Example
-{
-    public class PatchNumberPortExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://rest.circuitid.com";
-            // Configure API key authorization: jwt
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new NumberPortsApi(Configuration.Default);
-            var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var numberports = new Numberports(); // Numberports | The request data.
-
-            try
-            {
-                // Patch object's data
-                GetNumberPort200Response result = apiInstance.PatchNumberPort(id, numberports);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling NumberPortsApi.PatchNumberPort: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **numberports** | [**Numberports**](Numberports.md)| The request data. | 
-
-### Return type
-
-[**GetNumberPort200Response**](GetNumberPort200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the modified data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
 | **405** | Method Not Allowed |  -  |
 | **406** | Not Acceptable |  -  |
 | **408** | Timeout |  -  |

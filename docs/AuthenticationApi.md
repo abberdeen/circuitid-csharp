@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## CreateAuthentication
 
-> CreateAuthentication200Response CreateAuthentication (Authentication authentication)
+> CreateAuthentication200Response CreateAuthentication (AuthenticationCreateOrPatch authenticationCreateOrPatch)
 
 Create a new object
 
@@ -38,12 +38,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new AuthenticationApi(Configuration.Default);
-            var authentication = new Authentication(); // Authentication | The JSON object that will be posted to the REST API endpoint.
+            var authenticationCreateOrPatch = new AuthenticationCreateOrPatch(); // AuthenticationCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                CreateAuthentication200Response result = apiInstance.CreateAuthentication(authentication);
+                CreateAuthentication200Response result = apiInstance.CreateAuthentication(authenticationCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -62,7 +62,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **authentication** | [**Authentication**](Authentication.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **authenticationCreateOrPatch** | [**AuthenticationCreateOrPatch**](AuthenticationCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 

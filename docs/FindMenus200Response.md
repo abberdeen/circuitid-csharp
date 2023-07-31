@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Total** | **int** |  | 
 **Limit** | **int** |  | 
 **Skip** | **int** |  | 
-**Data** | [**List&lt;Menus&gt;**](Menus.md) |  | 
+**Data** | [**List&lt;GetMenu200Response&gt;**](GetMenu200Response.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

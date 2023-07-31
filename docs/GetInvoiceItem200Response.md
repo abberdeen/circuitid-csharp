@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **Invoice** | **string** | ObjectId (unique 12 bytes ID) | 
 **Ref** | **string** |  | [optional] 
 **Object** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

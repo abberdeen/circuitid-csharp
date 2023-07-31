@@ -13,7 +13,6 @@ Name | Type | Description | Notes
 **Priority** | **int** |  | [default to 1]
 **DestinationType** | **string** |  | 
 **Destination** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
-**Ref** | **string** |  | [optional] 
 **CallForwardingDestination** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

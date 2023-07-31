@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **DueAt** | **DateTime** |  | 
 **Status** | **string** |  | [default to StatusEnum.Open]
 **Error** | **string** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

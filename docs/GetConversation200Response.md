@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **Ref** | **string** |  | 
 **Object** | **string** | ObjectId (unique 12 bytes ID) | 
 **Status** | **string** |  | [default to StatusEnum.Open]
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

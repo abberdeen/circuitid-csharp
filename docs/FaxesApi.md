@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## CreateFax
 
-> GetFax200Response CreateFax (Faxes faxes)
+> GetFax200Response CreateFax (FaxesCreateOrPatch faxesCreateOrPatch)
 
 Create a new object
 
@@ -41,12 +41,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new FaxesApi(Configuration.Default);
-            var faxes = new Faxes(); // Faxes | The JSON object that will be posted to the REST API endpoint.
+            var faxesCreateOrPatch = new FaxesCreateOrPatch(); // FaxesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetFax200Response result = apiInstance.CreateFax(faxes);
+                GetFax200Response result = apiInstance.CreateFax(faxesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -65,7 +65,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **faxes** | [**Faxes**](Faxes.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **faxesCreateOrPatch** | [**FaxesCreateOrPatch**](FaxesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 

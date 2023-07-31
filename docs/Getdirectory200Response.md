@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Type** | **string** |  | 
 **Groups** | **List&lt;string&gt;** |  | [optional] 
 **Announcement** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

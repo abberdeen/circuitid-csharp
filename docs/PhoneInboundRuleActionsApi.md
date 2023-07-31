@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreatePhoneInboundRuleAction
 
-> GetPhoneInboundRuleAction200Response CreatePhoneInboundRuleAction (Phoneinboundruleactions phoneinboundruleactions)
+> GetPhoneInboundRuleAction200Response CreatePhoneInboundRuleAction (PhoneinboundruleactionsCreateOrPatch phoneinboundruleactionsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new PhoneInboundRuleActionsApi(Configuration.Default);
-            var phoneinboundruleactions = new Phoneinboundruleactions(); // Phoneinboundruleactions | The JSON object that will be posted to the REST API endpoint.
+            var phoneinboundruleactionsCreateOrPatch = new PhoneinboundruleactionsCreateOrPatch(); // PhoneinboundruleactionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetPhoneInboundRuleAction200Response result = apiInstance.CreatePhoneInboundRuleAction(phoneinboundruleactions);
+                GetPhoneInboundRuleAction200Response result = apiInstance.CreatePhoneInboundRuleAction(phoneinboundruleactionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **phoneinboundruleactions** | [**Phoneinboundruleactions**](Phoneinboundruleactions.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **phoneinboundruleactionsCreateOrPatch** | [**PhoneinboundruleactionsCreateOrPatch**](PhoneinboundruleactionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchPhoneInboundRuleAction
 
-> GetPhoneInboundRuleAction200Response PatchPhoneInboundRuleAction (string id, Phoneinboundruleactions phoneinboundruleactions)
+> GetPhoneInboundRuleAction200Response PatchPhoneInboundRuleAction (string id, PhoneinboundruleactionsCreateOrPatch phoneinboundruleactionsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new PhoneInboundRuleActionsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var phoneinboundruleactions = new Phoneinboundruleactions(); // Phoneinboundruleactions | The request data.
+            var phoneinboundruleactionsCreateOrPatch = new PhoneinboundruleactionsCreateOrPatch(); // PhoneinboundruleactionsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetPhoneInboundRuleAction200Response result = apiInstance.PatchPhoneInboundRuleAction(id, phoneinboundruleactions);
+                GetPhoneInboundRuleAction200Response result = apiInstance.PatchPhoneInboundRuleAction(id, phoneinboundruleactionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **phoneinboundruleactions** | [**Phoneinboundruleactions**](Phoneinboundruleactions.md)| The request data. | 
+ **phoneinboundruleactionsCreateOrPatch** | [**PhoneinboundruleactionsCreateOrPatch**](PhoneinboundruleactionsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **RequirePasscode** | **int** |  | [optional] [default to RequirePasscodeEnum.NUMBER_0]
 **Share** | **string** |  | [optional] 
 **Chatroom** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

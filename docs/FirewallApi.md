@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateFirewall
 
-> GetFirewall200Response CreateFirewall (Firewall firewall)
+> GetFirewall200Response CreateFirewall (FirewallCreateOrPatch firewallCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new FirewallApi(Configuration.Default);
-            var firewall = new Firewall(); // Firewall | The JSON object that will be posted to the REST API endpoint.
+            var firewallCreateOrPatch = new FirewallCreateOrPatch(); // FirewallCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetFirewall200Response result = apiInstance.CreateFirewall(firewall);
+                GetFirewall200Response result = apiInstance.CreateFirewall(firewallCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **firewall** | [**Firewall**](Firewall.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **firewallCreateOrPatch** | [**FirewallCreateOrPatch**](FirewallCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchFirewall
 
-> GetFirewall200Response PatchFirewall (string id, Firewall firewall)
+> GetFirewall200Response PatchFirewall (string id, FirewallCreateOrPatch firewallCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new FirewallApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var firewall = new Firewall(); // Firewall | The request data.
+            var firewallCreateOrPatch = new FirewallCreateOrPatch(); // FirewallCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetFirewall200Response result = apiInstance.PatchFirewall(id, firewall);
+                GetFirewall200Response result = apiInstance.PatchFirewall(id, firewallCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **firewall** | [**Firewall**](Firewall.md)| The request data. | 
+ **firewallCreateOrPatch** | [**FirewallCreateOrPatch**](FirewallCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

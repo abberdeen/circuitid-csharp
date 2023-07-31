@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateDomain
 
-> GetDomain200Response CreateDomain (Domains domains)
+> GetDomain200Response CreateDomain (DomainsCreateOrPatch domainsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DomainsApi(Configuration.Default);
-            var domains = new Domains(); // Domains | The JSON object that will be posted to the REST API endpoint.
+            var domainsCreateOrPatch = new DomainsCreateOrPatch(); // DomainsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetDomain200Response result = apiInstance.CreateDomain(domains);
+                GetDomain200Response result = apiInstance.CreateDomain(domainsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **domains** | [**Domains**](Domains.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **domainsCreateOrPatch** | [**DomainsCreateOrPatch**](DomainsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchDomain
 
-> GetDomain200Response PatchDomain (string id, Domains domains)
+> GetDomain200Response PatchDomain (string id, DomainsCreateOrPatch domainsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new DomainsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var domains = new Domains(); // Domains | The request data.
+            var domainsCreateOrPatch = new DomainsCreateOrPatch(); // DomainsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetDomain200Response result = apiInstance.PatchDomain(id, domains);
+                GetDomain200Response result = apiInstance.PatchDomain(id, domainsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **domains** | [**Domains**](Domains.md)| The request data. | 
+ **domainsCreateOrPatch** | [**DomainsCreateOrPatch**](DomainsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -13,9 +13,8 @@ Name | Type | Description | Notes
 **Direction** | **string** |  | [optional] 
 **Param** | **string** |  | 
 **Hits** | **int** |  | [optional] 
-**Ai** | **int** |  | [optional] [default to AiEnum.NUMBER_0]
 **Status** | **int** |  | [optional] [default to StatusEnum.NUMBER_1]
-**NotificationHits** | **int** |  | [optional] [default to 1]
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

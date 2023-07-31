@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateMessageCampaign
 
-> GetMessageCampaign200Response CreateMessageCampaign (Messagecampaigns messagecampaigns)
+> GetMessageCampaign200Response CreateMessageCampaign (MessagecampaignsCreateOrPatch messagecampaignsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new MessageCampaignsApi(Configuration.Default);
-            var messagecampaigns = new Messagecampaigns(); // Messagecampaigns | The JSON object that will be posted to the REST API endpoint.
+            var messagecampaignsCreateOrPatch = new MessagecampaignsCreateOrPatch(); // MessagecampaignsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetMessageCampaign200Response result = apiInstance.CreateMessageCampaign(messagecampaigns);
+                GetMessageCampaign200Response result = apiInstance.CreateMessageCampaign(messagecampaignsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **messagecampaigns** | [**Messagecampaigns**](Messagecampaigns.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **messagecampaignsCreateOrPatch** | [**MessagecampaignsCreateOrPatch**](MessagecampaignsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchMessageCampaign
 
-> GetMessageCampaign200Response PatchMessageCampaign (string id, Messagecampaigns messagecampaigns)
+> GetMessageCampaign200Response PatchMessageCampaign (string id, MessagecampaignsCreateOrPatch messagecampaignsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new MessageCampaignsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var messagecampaigns = new Messagecampaigns(); // Messagecampaigns | The request data.
+            var messagecampaignsCreateOrPatch = new MessagecampaignsCreateOrPatch(); // MessagecampaignsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetMessageCampaign200Response result = apiInstance.PatchMessageCampaign(id, messagecampaigns);
+                GetMessageCampaign200Response result = apiInstance.PatchMessageCampaign(id, messagecampaignsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **messagecampaigns** | [**Messagecampaigns**](Messagecampaigns.md)| The request data. | 
+ **messagecampaignsCreateOrPatch** | [**MessagecampaignsCreateOrPatch**](MessagecampaignsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

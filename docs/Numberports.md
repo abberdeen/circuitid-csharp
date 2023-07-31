@@ -5,8 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Numbers** | **List&lt;string&gt;** |  | 
 **Name** | **string** |  | 
-**Type** | **string** |  | 
+**Type** | **string** |  | [default to TypeEnum.In]
 **TypeOfService** | **string** |  | 
 **AuthorizedPerson** | **string** |  | 
 **DesiredDueDate** | **DateTime** |  | 

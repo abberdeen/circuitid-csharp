@@ -10,7 +10,7 @@ We are excited to have you on board and are confident that this documentation si
 Happy coding!
 
 
-- API version: 0.47.19
+- API version: 0.47.20
 - SDK version: 1.0.0
 
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -91,12 +91,12 @@ namespace Example
             // Configuration.Default.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new AcceptedSendersApi(Configuration.Default);
-            var acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The JSON object that will be posted to the REST API endpoint.
+            var acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetAcceptedSender200Response result = apiInstance.CreateAcceptedSender(acceptedsenders);
+                GetAcceptedSender200Response result = apiInstance.CreateAcceptedSender(acceptedsendersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -249,8 +249,6 @@ Class | Method | HTTP request | Description
 *MessageBrandsApi* | [**CreateMessageBrand**](docs/MessageBrandsApi.md#createmessagebrand) | **POST** /messagebrands | Create a new object
 *MessageBrandsApi* | [**FindMessageBrands**](docs/MessageBrandsApi.md#findmessagebrands) | **GET** /messagebrands | Find multiple objects
 *MessageBrandsApi* | [**GetMessageBrand**](docs/MessageBrandsApi.md#getmessagebrand) | **GET** /messagebrands/{id} | Get object by id
-*MessageBrandsApi* | [**PatchMessageBrand**](docs/MessageBrandsApi.md#patchmessagebrand) | **PATCH** /messagebrands/{id} | Patch object's data
-*MessageBrandsApi* | [**RemoveMessageBrand**](docs/MessageBrandsApi.md#removemessagebrand) | **DELETE** /messagebrands/{id} | Delete object by id
 *MessageCampaignsApi* | [**CreateMessageCampaign**](docs/MessageCampaignsApi.md#createmessagecampaign) | **POST** /messagecampaigns | Create a new object
 *MessageCampaignsApi* | [**FindMessageCampaigns**](docs/MessageCampaignsApi.md#findmessagecampaigns) | **GET** /messagecampaigns | Find multiple objects
 *MessageCampaignsApi* | [**GetMessageCampaign**](docs/MessageCampaignsApi.md#getmessagecampaign) | **GET** /messagecampaigns/{id} | Get object by id
@@ -259,7 +257,6 @@ Class | Method | HTTP request | Description
 *NumberPortsApi* | [**CreateNumberPort**](docs/NumberPortsApi.md#createnumberport) | **POST** /numberports | Create a new object
 *NumberPortsApi* | [**FindNumberPorts**](docs/NumberPortsApi.md#findnumberports) | **GET** /numberports | Find multiple objects
 *NumberPortsApi* | [**GetNumberPort**](docs/NumberPortsApi.md#getnumberport) | **GET** /numberports/{id} | Get object by id
-*NumberPortsApi* | [**PatchNumberPort**](docs/NumberPortsApi.md#patchnumberport) | **PATCH** /numberports/{id} | Patch object's data
 *NumbersApi* | [**FindNumbers**](docs/NumbersApi.md#findnumbers) | **GET** /numbers | Find multiple objects
 *NumbersApi* | [**GetNumber**](docs/NumbersApi.md#getnumber) | **GET** /numbers/{id} | Get object by id
 *NumbersApi* | [**PatchNumber**](docs/NumbersApi.md#patchnumber) | **PATCH** /numbers/{id} | Patch object's data
@@ -322,24 +319,42 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [Models.Acceptedsenders](docs/Acceptedsenders.md)
+ - [Models.AcceptedsendersCreateOrPatch](docs/AcceptedsendersCreateOrPatch.md)
  - [Models.Announcements](docs/Announcements.md)
+ - [Models.AnnouncementsCreateOrPatch](docs/AnnouncementsCreateOrPatch.md)
  - [Models.Authentication](docs/Authentication.md)
+ - [Models.AuthenticationCreateOrPatch](docs/AuthenticationCreateOrPatch.md)
  - [Models.Callqueueagents](docs/Callqueueagents.md)
+ - [Models.CallqueueagentsCreateOrPatch](docs/CallqueueagentsCreateOrPatch.md)
  - [Models.Callqueues](docs/Callqueues.md)
+ - [Models.CallqueuesCreateOrPatch](docs/CallqueuesCreateOrPatch.md)
  - [Models.Chatrooms](docs/Chatrooms.md)
+ - [Models.ChatroomsCreateOrPatch](docs/ChatroomsCreateOrPatch.md)
  - [Models.Clients](docs/Clients.md)
+ - [Models.ClientsCreateOrPatch](docs/ClientsCreateOrPatch.md)
  - [Models.Conferencerooms](docs/Conferencerooms.md)
+ - [Models.ConferenceroomsCreateOrPatch](docs/ConferenceroomsCreateOrPatch.md)
  - [Models.Contacts](docs/Contacts.md)
+ - [Models.ContactsCreateOrPatch](docs/ContactsCreateOrPatch.md)
  - [Models.Conversationmessages](docs/Conversationmessages.md)
+ - [Models.ConversationmessagesCreateOrPatch](docs/ConversationmessagesCreateOrPatch.md)
  - [Models.Conversations](docs/Conversations.md)
+ - [Models.ConversationsCreateOrPatch](docs/ConversationsCreateOrPatch.md)
  - [Models.CreateAuthentication200Response](docs/CreateAuthentication200Response.md)
  - [Models.Customers](docs/Customers.md)
+ - [Models.CustomersCreateOrPatch](docs/CustomersCreateOrPatch.md)
  - [Models.Developerapps](docs/Developerapps.md)
+ - [Models.DeveloperappsCreateOrPatch](docs/DeveloperappsCreateOrPatch.md)
  - [Models.Developerappsubscriptions](docs/Developerappsubscriptions.md)
+ - [Models.DeveloperappsubscriptionsCreateOrPatch](docs/DeveloperappsubscriptionsCreateOrPatch.md)
  - [Models.Directories](docs/Directories.md)
+ - [Models.DirectoriesCreateOrPatch](docs/DirectoriesCreateOrPatch.md)
  - [Models.Domains](docs/Domains.md)
+ - [Models.DomainsCreateOrPatch](docs/DomainsCreateOrPatch.md)
  - [Models.Faxaccounts](docs/Faxaccounts.md)
+ - [Models.FaxaccountsCreateOrPatch](docs/FaxaccountsCreateOrPatch.md)
  - [Models.Faxes](docs/Faxes.md)
+ - [Models.FaxesCreateOrPatch](docs/FaxesCreateOrPatch.md)
  - [Models.Find](docs/Find.md)
  - [Models.FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
  - [Models.FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
@@ -384,6 +399,7 @@ Class | Method | HTTP request | Description
  - [Models.FindUsers200Response](docs/FindUsers200Response.md)
  - [Models.FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
  - [Models.Firewall](docs/Firewall.md)
+ - [Models.FirewallCreateOrPatch](docs/FirewallCreateOrPatch.md)
  - [Models.GetAcceptedSender200Response](docs/GetAcceptedSender200Response.md)
  - [Models.GetAnnouncement200Response](docs/GetAnnouncement200Response.md)
  - [Models.GetCallQueue200Response](docs/GetCallQueue200Response.md)
@@ -426,31 +442,57 @@ Class | Method | HTTP request | Description
  - [Models.GetVirtualExtension200Response](docs/GetVirtualExtension200Response.md)
  - [Models.Getdirectory200Response](docs/Getdirectory200Response.md)
  - [Models.Groupmembers](docs/Groupmembers.md)
+ - [Models.GroupmembersCreateOrPatch](docs/GroupmembersCreateOrPatch.md)
  - [Models.Groups](docs/Groups.md)
+ - [Models.GroupsCreateOrPatch](docs/GroupsCreateOrPatch.md)
  - [Models.Holidays](docs/Holidays.md)
+ - [Models.HolidaysCreateOrPatch](docs/HolidaysCreateOrPatch.md)
+ - [Models.Id](docs/Id.md)
  - [Models.Invoiceitems](docs/Invoiceitems.md)
+ - [Models.InvoiceitemsCreateOrPatch](docs/InvoiceitemsCreateOrPatch.md)
  - [Models.Invoices](docs/Invoices.md)
+ - [Models.InvoicesCreateOrPatch](docs/InvoicesCreateOrPatch.md)
  - [Models.Licenses](docs/Licenses.md)
+ - [Models.LicensesCreateOrPatch](docs/LicensesCreateOrPatch.md)
  - [Models.Menuoptions](docs/Menuoptions.md)
+ - [Models.MenuoptionsCreateOrPatch](docs/MenuoptionsCreateOrPatch.md)
  - [Models.Menus](docs/Menus.md)
+ - [Models.MenusCreateOrPatch](docs/MenusCreateOrPatch.md)
  - [Models.Messagebrands](docs/Messagebrands.md)
+ - [Models.MessagebrandsCreateOrPatch](docs/MessagebrandsCreateOrPatch.md)
  - [Models.Messagecampaigns](docs/Messagecampaigns.md)
+ - [Models.MessagecampaignsCreateOrPatch](docs/MessagecampaignsCreateOrPatch.md)
  - [Models.Numberports](docs/Numberports.md)
+ - [Models.NumberportsCreateOrPatch](docs/NumberportsCreateOrPatch.md)
  - [Models.Numbers](docs/Numbers.md)
+ - [Models.NumbersCreateOrPatch](docs/NumbersCreateOrPatch.md)
  - [Models.Offices](docs/Offices.md)
+ - [Models.OfficesCreateOrPatch](docs/OfficesCreateOrPatch.md)
  - [Models.Phoneinboundruleactions](docs/Phoneinboundruleactions.md)
+ - [Models.PhoneinboundruleactionsCreateOrPatch](docs/PhoneinboundruleactionsCreateOrPatch.md)
  - [Models.Phoneinboundrules](docs/Phoneinboundrules.md)
+ - [Models.PhoneinboundrulesCreateOrPatch](docs/PhoneinboundrulesCreateOrPatch.md)
  - [Models.Phoneoutboundruleactions](docs/Phoneoutboundruleactions.md)
+ - [Models.PhoneoutboundruleactionsCreateOrPatch](docs/PhoneoutboundruleactionsCreateOrPatch.md)
  - [Models.Phoneoutboundrules](docs/Phoneoutboundrules.md)
+ - [Models.PhoneoutboundrulesCreateOrPatch](docs/PhoneoutboundrulesCreateOrPatch.md)
  - [Models.Ratecenters](docs/Ratecenters.md)
+ - [Models.RatecentersCreateOrPatch](docs/RatecentersCreateOrPatch.md)
  - [Models.ResponseDate](docs/ResponseDate.md)
  - [Models.ResponseError](docs/ResponseError.md)
  - [Models.ResponseUsers](docs/ResponseUsers.md)
  - [Models.Servers](docs/Servers.md)
+ - [Models.ServersCreateOrPatch](docs/ServersCreateOrPatch.md)
  - [Models.Timeschedules](docs/Timeschedules.md)
+ - [Models.TimeschedulesCreateOrPatch](docs/TimeschedulesCreateOrPatch.md)
  - [Models.Users](docs/Users.md)
+ - [Models.UsersCommunicationValue](docs/UsersCommunicationValue.md)
+ - [Models.UsersCommunicationValueNotifications](docs/UsersCommunicationValueNotifications.md)
+ - [Models.UsersCreateOrPatch](docs/UsersCreateOrPatch.md)
  - [Models.Usertokens](docs/Usertokens.md)
+ - [Models.UsertokensCreateOrPatch](docs/UsertokensCreateOrPatch.md)
  - [Models.Virtualextensions](docs/Virtualextensions.md)
+ - [Models.VirtualextensionsCreateOrPatch](docs/VirtualextensionsCreateOrPatch.md)
 
 
 <a id="documentation-for-authorization"></a>

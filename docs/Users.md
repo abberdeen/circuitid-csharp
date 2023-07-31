@@ -21,7 +21,6 @@ Name | Type | Description | Notes
 **Avatar** | **string** |  | [optional] 
 **Language** | **string** |  | [optional] [default to LanguageEnum.En]
 **IsPrimary** | **int** |  | [optional] [default to IsPrimaryEnum.NUMBER_0]
-**Status** | **string** |  | [optional] [default to StatusEnum.Active]
 **VmGreetingType** | **string** |  | [optional] [default to VmGreetingTypeEnum.Default]
 **VmTimeout** | **int** |  | [optional] [default to 20]
 **VmFile** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
@@ -33,14 +32,9 @@ Name | Type | Description | Notes
 **AdminPermission** | **string** |  | [optional] 
 **BillingPermission** | **string** |  | [optional] 
 **PhonePermission** | **string** |  | [optional] 
-**AgilePermission** | **string** |  | [optional] 
-**JobServerPermission** | **string** |  | [optional] 
-**MediaServerPermission** | **string** |  | [optional] 
-**MailServerPermission** | **string** |  | [optional] 
-**SuperAdminPermission** | **string** |  | [optional] 
 **Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
 **VmTranscription** | **int** |  | [optional] [default to VmTranscriptionEnum.NUMBER_0]
-**Communication** | **Object** |  | [optional] 
+**Communication** | [**Dictionary&lt;string, UsersCommunicationValue&gt;**](UsersCommunicationValue.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateServer
 
-> GetServer200Response CreateServer (Servers servers)
+> GetServer200Response CreateServer (ServersCreateOrPatch serversCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ServersApi(Configuration.Default);
-            var servers = new Servers(); // Servers | The JSON object that will be posted to the REST API endpoint.
+            var serversCreateOrPatch = new ServersCreateOrPatch(); // ServersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetServer200Response result = apiInstance.CreateServer(servers);
+                GetServer200Response result = apiInstance.CreateServer(serversCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **servers** | [**Servers**](Servers.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **serversCreateOrPatch** | [**ServersCreateOrPatch**](ServersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchServer
 
-> GetServer200Response PatchServer (string id, Servers servers)
+> GetServer200Response PatchServer (string id, ServersCreateOrPatch serversCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new ServersApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var servers = new Servers(); // Servers | The request data.
+            var serversCreateOrPatch = new ServersCreateOrPatch(); // ServersCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetServer200Response result = apiInstance.PatchServer(id, servers);
+                GetServer200Response result = apiInstance.PatchServer(id, serversCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **servers** | [**Servers**](Servers.md)| The request data. | 
+ **serversCreateOrPatch** | [**ServersCreateOrPatch**](ServersCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

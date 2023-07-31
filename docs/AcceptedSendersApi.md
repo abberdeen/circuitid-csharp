@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateAcceptedSender
 
-> GetAcceptedSender200Response CreateAcceptedSender (Acceptedsenders acceptedsenders)
+> GetAcceptedSender200Response CreateAcceptedSender (AcceptedsendersCreateOrPatch acceptedsendersCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new AcceptedSendersApi(Configuration.Default);
-            var acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The JSON object that will be posted to the REST API endpoint.
+            var acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetAcceptedSender200Response result = apiInstance.CreateAcceptedSender(acceptedsenders);
+                GetAcceptedSender200Response result = apiInstance.CreateAcceptedSender(acceptedsendersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **acceptedsenders** | [**Acceptedsenders**](Acceptedsenders.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **acceptedsendersCreateOrPatch** | [**AcceptedsendersCreateOrPatch**](AcceptedsendersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchAcceptedSender
 
-> GetAcceptedSender200Response PatchAcceptedSender (string id, Acceptedsenders acceptedsenders)
+> GetAcceptedSender200Response PatchAcceptedSender (string id, AcceptedsendersCreateOrPatch acceptedsendersCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new AcceptedSendersApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The request data.
+            var acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetAcceptedSender200Response result = apiInstance.PatchAcceptedSender(id, acceptedsenders);
+                GetAcceptedSender200Response result = apiInstance.PatchAcceptedSender(id, acceptedsendersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **acceptedsenders** | [**Acceptedsenders**](Acceptedsenders.md)| The request data. | 
+ **acceptedsendersCreateOrPatch** | [**AcceptedsendersCreateOrPatch**](AcceptedsendersCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

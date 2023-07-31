@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateDeveloperApp
 
-> GetDeveloperApp200Response CreateDeveloperApp (Developerapps developerapps)
+> GetDeveloperApp200Response CreateDeveloperApp (DeveloperappsCreateOrPatch developerappsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new DeveloperAppsApi(Configuration.Default);
-            var developerapps = new Developerapps(); // Developerapps | The JSON object that will be posted to the REST API endpoint.
+            var developerappsCreateOrPatch = new DeveloperappsCreateOrPatch(); // DeveloperappsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetDeveloperApp200Response result = apiInstance.CreateDeveloperApp(developerapps);
+                GetDeveloperApp200Response result = apiInstance.CreateDeveloperApp(developerappsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **developerapps** | [**Developerapps**](Developerapps.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **developerappsCreateOrPatch** | [**DeveloperappsCreateOrPatch**](DeveloperappsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchDeveloperApp
 
-> GetDeveloperApp200Response PatchDeveloperApp (string id, Developerapps developerapps)
+> GetDeveloperApp200Response PatchDeveloperApp (string id, DeveloperappsCreateOrPatch developerappsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new DeveloperAppsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var developerapps = new Developerapps(); // Developerapps | The request data.
+            var developerappsCreateOrPatch = new DeveloperappsCreateOrPatch(); // DeveloperappsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetDeveloperApp200Response result = apiInstance.PatchDeveloperApp(id, developerapps);
+                GetDeveloperApp200Response result = apiInstance.PatchDeveloperApp(id, developerappsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **developerapps** | [**Developerapps**](Developerapps.md)| The request data. | 
+ **developerappsCreateOrPatch** | [**DeveloperappsCreateOrPatch**](DeveloperappsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

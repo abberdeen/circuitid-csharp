@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **RequireId** | **int** |  | [optional] [default to RequireIdEnum.NUMBER_0]
 **Services** | **List&lt;GetDeveloperAppSubscription200Response.ServicesEnum&gt;** |  | 
 **Events** | **List&lt;GetDeveloperAppSubscription200Response.EventsEnum&gt;** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

@@ -7,14 +7,12 @@ Method | HTTP request | Description
 [**CreateMessageBrand**](MessageBrandsApi.md#createmessagebrand) | **POST** /messagebrands | Create a new object
 [**FindMessageBrands**](MessageBrandsApi.md#findmessagebrands) | **GET** /messagebrands | Find multiple objects
 [**GetMessageBrand**](MessageBrandsApi.md#getmessagebrand) | **GET** /messagebrands/{id} | Get object by id
-[**PatchMessageBrand**](MessageBrandsApi.md#patchmessagebrand) | **PATCH** /messagebrands/{id} | Patch object&#39;s data
-[**RemoveMessageBrand**](MessageBrandsApi.md#removemessagebrand) | **DELETE** /messagebrands/{id} | Delete object by id
 
 
 
 ## CreateMessageBrand
 
-> GetMessageBrand200Response CreateMessageBrand (Messagebrands messagebrands)
+> GetMessageBrand200Response CreateMessageBrand (MessagebrandsCreateOrPatch messagebrandsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +40,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new MessageBrandsApi(Configuration.Default);
-            var messagebrands = new Messagebrands(); // Messagebrands | The JSON object that will be posted to the REST API endpoint.
+            var messagebrandsCreateOrPatch = new MessagebrandsCreateOrPatch(); // MessagebrandsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetMessageBrand200Response result = apiInstance.CreateMessageBrand(messagebrands);
+                GetMessageBrand200Response result = apiInstance.CreateMessageBrand(messagebrandsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +64,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **messagebrands** | [**Messagebrands**](Messagebrands.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **messagebrandsCreateOrPatch** | [**MessagebrandsCreateOrPatch**](MessagebrandsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -282,188 +280,6 @@ Name | Type | Description  | Notes
 | **401** | Not Authenticated |  -  |
 | **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## PatchMessageBrand
-
-> GetMessageBrand200Response PatchMessageBrand (string id, Messagebrands messagebrands)
-
-Patch object's data
-
-Make updates to specific fields within the record without replacing the entire dataset.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Com.CircuitID.Api;
-using Com.CircuitID.Client;
-using Com.CircuitID.Models;
-
-namespace Example
-{
-    public class PatchMessageBrandExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://rest.circuitid.com";
-            // Configure API key authorization: jwt
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new MessageBrandsApi(Configuration.Default);
-            var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var messagebrands = new Messagebrands(); // Messagebrands | The request data.
-
-            try
-            {
-                // Patch object's data
-                GetMessageBrand200Response result = apiInstance.PatchMessageBrand(id, messagebrands);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling MessageBrandsApi.PatchMessageBrand: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **messagebrands** | [**Messagebrands**](Messagebrands.md)| The request data. | 
-
-### Return type
-
-[**GetMessageBrand200Response**](GetMessageBrand200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
-- **Content-Type**: application/json
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the modified data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-[[Back to top]](#)
-[[Back to API list]](../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../README.md#documentation-for-models)
-[[Back to README]](../README.md)
-
-
-## RemoveMessageBrand
-
-> GetMessageBrand200Response RemoveMessageBrand (string id)
-
-Delete object by id
-
-Delete an object by id, removing it from the service.
-
-### Example
-
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using Com.CircuitID.Api;
-using Com.CircuitID.Client;
-using Com.CircuitID.Models;
-
-namespace Example
-{
-    public class RemoveMessageBrandExample
-    {
-        public static void Main()
-        {
-            Configuration.Default.BasePath = "https://rest.circuitid.com";
-            // Configure API key authorization: jwt
-            Configuration.Default.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
-
-            var apiInstance = new MessageBrandsApi(Configuration.Default);
-            var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-
-            try
-            {
-                // Delete object by id
-                GetMessageBrand200Response result = apiInstance.RemoveMessageBrand(id);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException e)
-            {
-                Debug.Print("Exception when calling MessageBrandsApi.RemoveMessageBrand: " + e.Message );
-                Debug.Print("Status Code: "+ e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
-
-### Return type
-
-[**GetMessageBrand200Response**](GetMessageBrand200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the deleted data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
 | **405** | Method Not Allowed |  -  |
 | **406** | Not Acceptable |  -  |
 | **408** | Timeout |  -  |

@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **Lata** | **string** |  | 
 **LocState** | **string** |  | 
 **RcAbbre** | **string** |  | 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Total** | **int** |  | 
 **Limit** | **int** |  | 
 **Skip** | **int** |  | 
-**Data** | [**List&lt;Virtualextensions&gt;**](Virtualextensions.md) |  | 
+**Data** | [**List&lt;GetVirtualExtension200Response&gt;**](GetVirtualExtension200Response.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

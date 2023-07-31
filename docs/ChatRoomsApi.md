@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateChatRoom
 
-> GetChatRoom200Response CreateChatRoom (Chatrooms chatrooms)
+> GetChatRoom200Response CreateChatRoom (ChatroomsCreateOrPatch chatroomsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChatRoomsApi(Configuration.Default);
-            var chatrooms = new Chatrooms(); // Chatrooms | The JSON object that will be posted to the REST API endpoint.
+            var chatroomsCreateOrPatch = new ChatroomsCreateOrPatch(); // ChatroomsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetChatRoom200Response result = apiInstance.CreateChatRoom(chatrooms);
+                GetChatRoom200Response result = apiInstance.CreateChatRoom(chatroomsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **chatrooms** | [**Chatrooms**](Chatrooms.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **chatroomsCreateOrPatch** | [**ChatroomsCreateOrPatch**](ChatroomsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchChatRoom
 
-> GetChatRoom200Response PatchChatRoom (string id, Chatrooms chatrooms)
+> GetChatRoom200Response PatchChatRoom (string id, ChatroomsCreateOrPatch chatroomsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new ChatRoomsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var chatrooms = new Chatrooms(); // Chatrooms | The request data.
+            var chatroomsCreateOrPatch = new ChatroomsCreateOrPatch(); // ChatroomsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetChatRoom200Response result = apiInstance.PatchChatRoom(id, chatrooms);
+                GetChatRoom200Response result = apiInstance.PatchChatRoom(id, chatroomsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **chatrooms** | [**Chatrooms**](Chatrooms.md)| The request data. | 
+ **chatroomsCreateOrPatch** | [**ChatroomsCreateOrPatch**](ChatroomsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **Name** | **string** |  | [optional] 
 **Users** | **Object** |  | 
 **Avatar** | **string** |  | [optional] 
-**Direct** | **bool** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

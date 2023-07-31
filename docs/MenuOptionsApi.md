@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateMenuOption
 
-> GetMenuOption200Response CreateMenuOption (Menuoptions menuoptions)
+> GetMenuOption200Response CreateMenuOption (MenuoptionsCreateOrPatch menuoptionsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new MenuOptionsApi(Configuration.Default);
-            var menuoptions = new Menuoptions(); // Menuoptions | The JSON object that will be posted to the REST API endpoint.
+            var menuoptionsCreateOrPatch = new MenuoptionsCreateOrPatch(); // MenuoptionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetMenuOption200Response result = apiInstance.CreateMenuOption(menuoptions);
+                GetMenuOption200Response result = apiInstance.CreateMenuOption(menuoptionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **menuoptions** | [**Menuoptions**](Menuoptions.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **menuoptionsCreateOrPatch** | [**MenuoptionsCreateOrPatch**](MenuoptionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchMenuOption
 
-> GetMenuOption200Response PatchMenuOption (string id, Menuoptions menuoptions)
+> GetMenuOption200Response PatchMenuOption (string id, MenuoptionsCreateOrPatch menuoptionsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new MenuOptionsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var menuoptions = new Menuoptions(); // Menuoptions | The request data.
+            var menuoptionsCreateOrPatch = new MenuoptionsCreateOrPatch(); // MenuoptionsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetMenuOption200Response result = apiInstance.PatchMenuOption(id, menuoptions);
+                GetMenuOption200Response result = apiInstance.PatchMenuOption(id, menuoptionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **menuoptions** | [**Menuoptions**](Menuoptions.md)| The request data. | 
+ **menuoptionsCreateOrPatch** | [**MenuoptionsCreateOrPatch**](MenuoptionsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

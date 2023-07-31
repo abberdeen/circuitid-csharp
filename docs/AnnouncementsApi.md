@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateAnnouncement
 
-> GetAnnouncement200Response CreateAnnouncement (Announcements announcements)
+> GetAnnouncement200Response CreateAnnouncement (AnnouncementsCreateOrPatch announcementsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new AnnouncementsApi(Configuration.Default);
-            var announcements = new Announcements(); // Announcements | The JSON object that will be posted to the REST API endpoint.
+            var announcementsCreateOrPatch = new AnnouncementsCreateOrPatch(); // AnnouncementsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetAnnouncement200Response result = apiInstance.CreateAnnouncement(announcements);
+                GetAnnouncement200Response result = apiInstance.CreateAnnouncement(announcementsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **announcements** | [**Announcements**](Announcements.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **announcementsCreateOrPatch** | [**AnnouncementsCreateOrPatch**](AnnouncementsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchAnnouncement
 
-> GetAnnouncement200Response PatchAnnouncement (string id, Announcements announcements)
+> GetAnnouncement200Response PatchAnnouncement (string id, AnnouncementsCreateOrPatch announcementsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new AnnouncementsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var announcements = new Announcements(); // Announcements | The request data.
+            var announcementsCreateOrPatch = new AnnouncementsCreateOrPatch(); // AnnouncementsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetAnnouncement200Response result = apiInstance.PatchAnnouncement(id, announcements);
+                GetAnnouncement200Response result = apiInstance.PatchAnnouncement(id, announcementsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **announcements** | [**Announcements**](Announcements.md)| The request data. | 
+ **announcementsCreateOrPatch** | [**AnnouncementsCreateOrPatch**](AnnouncementsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

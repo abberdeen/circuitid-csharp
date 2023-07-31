@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **InboundNotification** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **OutboundNotification** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **Number** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

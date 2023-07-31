@@ -5,6 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**Attachments** | **List&lt;string&gt;** |  | [optional] 
+**CallerDestinations** | **List&lt;string&gt;** |  | 
 **CallerIdNumber** | **string** |  | 
 **CallerDestination** | **string** |  | 
 **Pages** | **int** |  | [optional] [default to 0]
@@ -22,6 +24,7 @@ Name | Type | Description | Notes
 **Invoice** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **SenderEmail** | **string** |  | [optional] 
 **SenderName** | **string** |  | [optional] 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateOffice
 
-> GetOffice200Response CreateOffice (Offices offices)
+> GetOffice200Response CreateOffice (OfficesCreateOrPatch officesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new OfficesApi(Configuration.Default);
-            var offices = new Offices(); // Offices | The JSON object that will be posted to the REST API endpoint.
+            var officesCreateOrPatch = new OfficesCreateOrPatch(); // OfficesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetOffice200Response result = apiInstance.CreateOffice(offices);
+                GetOffice200Response result = apiInstance.CreateOffice(officesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **offices** | [**Offices**](Offices.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **officesCreateOrPatch** | [**OfficesCreateOrPatch**](OfficesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchOffice
 
-> GetOffice200Response PatchOffice (string id, Offices offices)
+> GetOffice200Response PatchOffice (string id, OfficesCreateOrPatch officesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new OfficesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var offices = new Offices(); // Offices | The request data.
+            var officesCreateOrPatch = new OfficesCreateOrPatch(); // OfficesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetOffice200Response result = apiInstance.PatchOffice(id, offices);
+                GetOffice200Response result = apiInstance.PatchOffice(id, officesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **offices** | [**Offices**](Offices.md)| The request data. | 
+ **officesCreateOrPatch** | [**OfficesCreateOrPatch**](OfficesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

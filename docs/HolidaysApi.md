@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateHoliday
 
-> GetHoliday200Response CreateHoliday (Holidays holidays)
+> GetHoliday200Response CreateHoliday (HolidaysCreateOrPatch holidaysCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new HolidaysApi(Configuration.Default);
-            var holidays = new Holidays(); // Holidays | The JSON object that will be posted to the REST API endpoint.
+            var holidaysCreateOrPatch = new HolidaysCreateOrPatch(); // HolidaysCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetHoliday200Response result = apiInstance.CreateHoliday(holidays);
+                GetHoliday200Response result = apiInstance.CreateHoliday(holidaysCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **holidays** | [**Holidays**](Holidays.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **holidaysCreateOrPatch** | [**HolidaysCreateOrPatch**](HolidaysCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchHoliday
 
-> GetHoliday200Response PatchHoliday (string id, Holidays holidays)
+> GetHoliday200Response PatchHoliday (string id, HolidaysCreateOrPatch holidaysCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new HolidaysApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var holidays = new Holidays(); // Holidays | The request data.
+            var holidaysCreateOrPatch = new HolidaysCreateOrPatch(); // HolidaysCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetHoliday200Response result = apiInstance.PatchHoliday(id, holidays);
+                GetHoliday200Response result = apiInstance.PatchHoliday(id, holidaysCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **holidays** | [**Holidays**](Holidays.md)| The request data. | 
+ **holidaysCreateOrPatch** | [**HolidaysCreateOrPatch**](HolidaysCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

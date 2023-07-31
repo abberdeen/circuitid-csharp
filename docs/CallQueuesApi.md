@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateCallQueue
 
-> GetCallQueue200Response CreateCallQueue (Callqueues callqueues)
+> GetCallQueue200Response CreateCallQueue (CallqueuesCreateOrPatch callqueuesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new CallQueuesApi(Configuration.Default);
-            var callqueues = new Callqueues(); // Callqueues | The JSON object that will be posted to the REST API endpoint.
+            var callqueuesCreateOrPatch = new CallqueuesCreateOrPatch(); // CallqueuesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetCallQueue200Response result = apiInstance.CreateCallQueue(callqueues);
+                GetCallQueue200Response result = apiInstance.CreateCallQueue(callqueuesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callqueues** | [**Callqueues**](Callqueues.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **callqueuesCreateOrPatch** | [**CallqueuesCreateOrPatch**](CallqueuesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchCallQueue
 
-> GetCallQueue200Response PatchCallQueue (string id, Callqueues callqueues)
+> GetCallQueue200Response PatchCallQueue (string id, CallqueuesCreateOrPatch callqueuesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new CallQueuesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var callqueues = new Callqueues(); // Callqueues | The request data.
+            var callqueuesCreateOrPatch = new CallqueuesCreateOrPatch(); // CallqueuesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetCallQueue200Response result = apiInstance.PatchCallQueue(id, callqueues);
+                GetCallQueue200Response result = apiInstance.PatchCallQueue(id, callqueuesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **callqueues** | [**Callqueues**](Callqueues.md)| The request data. | 
+ **callqueuesCreateOrPatch** | [**CallqueuesCreateOrPatch**](CallqueuesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

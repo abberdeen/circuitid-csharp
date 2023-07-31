@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateContact
 
-> GetContact200Response CreateContact (Contacts contacts)
+> GetContact200Response CreateContact (ContactsCreateOrPatch contactsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ContactsApi(Configuration.Default);
-            var contacts = new Contacts(); // Contacts | The JSON object that will be posted to the REST API endpoint.
+            var contactsCreateOrPatch = new ContactsCreateOrPatch(); // ContactsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetContact200Response result = apiInstance.CreateContact(contacts);
+                GetContact200Response result = apiInstance.CreateContact(contactsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contacts** | [**Contacts**](Contacts.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **contactsCreateOrPatch** | [**ContactsCreateOrPatch**](ContactsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchContact
 
-> GetContact200Response PatchContact (string id, Contacts contacts)
+> GetContact200Response PatchContact (string id, ContactsCreateOrPatch contactsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new ContactsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var contacts = new Contacts(); // Contacts | The request data.
+            var contactsCreateOrPatch = new ContactsCreateOrPatch(); // ContactsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetContact200Response result = apiInstance.PatchContact(id, contacts);
+                GetContact200Response result = apiInstance.PatchContact(id, contactsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **contacts** | [**Contacts**](Contacts.md)| The request data. | 
+ **contactsCreateOrPatch** | [**ContactsCreateOrPatch**](ContactsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **User** | **string** | ObjectId (unique 12 bytes ID) | 
 **Priority** | **int** |  | [default to 1]
 **Tier** | **int** |  | [default to 1]
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

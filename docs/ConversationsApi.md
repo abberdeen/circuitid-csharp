@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateConversation
 
-> GetConversation200Response CreateConversation (Conversations conversations)
+> GetConversation200Response CreateConversation (ConversationsCreateOrPatch conversationsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ConversationsApi(Configuration.Default);
-            var conversations = new Conversations(); // Conversations | The JSON object that will be posted to the REST API endpoint.
+            var conversationsCreateOrPatch = new ConversationsCreateOrPatch(); // ConversationsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetConversation200Response result = apiInstance.CreateConversation(conversations);
+                GetConversation200Response result = apiInstance.CreateConversation(conversationsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **conversations** | [**Conversations**](Conversations.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **conversationsCreateOrPatch** | [**ConversationsCreateOrPatch**](ConversationsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchConversation
 
-> GetConversation200Response PatchConversation (string id, Conversations conversations)
+> GetConversation200Response PatchConversation (string id, ConversationsCreateOrPatch conversationsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new ConversationsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var conversations = new Conversations(); // Conversations | The request data.
+            var conversationsCreateOrPatch = new ConversationsCreateOrPatch(); // ConversationsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetConversation200Response result = apiInstance.PatchConversation(id, conversations);
+                GetConversation200Response result = apiInstance.PatchConversation(id, conversationsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **conversations** | [**Conversations**](Conversations.md)| The request data. | 
+ **conversationsCreateOrPatch** | [**ConversationsCreateOrPatch**](ConversationsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

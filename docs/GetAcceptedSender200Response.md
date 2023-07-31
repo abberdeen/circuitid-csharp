@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **Service** | **string** | ObjectId (unique 12 bytes ID) | 
 **ServiceRef** | **string** |  | 
 **Ref** | **string** |  | 
+**Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedAt** | **DateTime** |  | [optional] 

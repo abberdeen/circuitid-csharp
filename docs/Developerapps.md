@@ -20,7 +20,6 @@ Name | Type | Description | Notes
 **TermsOfServiceUrl** | **string** |  | [optional] 
 **PrivacyPolicyUrl** | **string** |  | [optional] 
 **Permissions** | **Object** |  | [optional] 
-**Status** | **string** |  | [default to StatusEnum.Pending]
 **WebhookAuthType** | **string** |  | [optional] 
 **WebhookUsername** | **string** |  | [optional] 
 **WebhookPassword** | **string** |  | [optional] 

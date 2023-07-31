@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateVirtualExtension
 
-> GetVirtualExtension200Response CreateVirtualExtension (Virtualextensions virtualextensions)
+> GetVirtualExtension200Response CreateVirtualExtension (VirtualextensionsCreateOrPatch virtualextensionsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new VirtualExtensionsApi(Configuration.Default);
-            var virtualextensions = new Virtualextensions(); // Virtualextensions | The JSON object that will be posted to the REST API endpoint.
+            var virtualextensionsCreateOrPatch = new VirtualextensionsCreateOrPatch(); // VirtualextensionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetVirtualExtension200Response result = apiInstance.CreateVirtualExtension(virtualextensions);
+                GetVirtualExtension200Response result = apiInstance.CreateVirtualExtension(virtualextensionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **virtualextensions** | [**Virtualextensions**](Virtualextensions.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **virtualextensionsCreateOrPatch** | [**VirtualextensionsCreateOrPatch**](VirtualextensionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchVirtualExtension
 
-> GetVirtualExtension200Response PatchVirtualExtension (string id, Virtualextensions virtualextensions)
+> GetVirtualExtension200Response PatchVirtualExtension (string id, VirtualextensionsCreateOrPatch virtualextensionsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new VirtualExtensionsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var virtualextensions = new Virtualextensions(); // Virtualextensions | The request data.
+            var virtualextensionsCreateOrPatch = new VirtualextensionsCreateOrPatch(); // VirtualextensionsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetVirtualExtension200Response result = apiInstance.PatchVirtualExtension(id, virtualextensions);
+                GetVirtualExtension200Response result = apiInstance.PatchVirtualExtension(id, virtualextensionsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **virtualextensions** | [**Virtualextensions**](Virtualextensions.md)| The request data. | 
+ **virtualextensionsCreateOrPatch** | [**VirtualextensionsCreateOrPatch**](VirtualextensionsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

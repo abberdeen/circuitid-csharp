@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateLicense
 
-> GetLicense200Response CreateLicense (Licenses licenses)
+> GetLicense200Response CreateLicense (LicensesCreateOrPatch licensesCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new LicensesApi(Configuration.Default);
-            var licenses = new Licenses(); // Licenses | The JSON object that will be posted to the REST API endpoint.
+            var licensesCreateOrPatch = new LicensesCreateOrPatch(); // LicensesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetLicense200Response result = apiInstance.CreateLicense(licenses);
+                GetLicense200Response result = apiInstance.CreateLicense(licensesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **licenses** | [**Licenses**](Licenses.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **licensesCreateOrPatch** | [**LicensesCreateOrPatch**](LicensesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchLicense
 
-> GetLicense200Response PatchLicense (string id, Licenses licenses)
+> GetLicense200Response PatchLicense (string id, LicensesCreateOrPatch licensesCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new LicensesApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var licenses = new Licenses(); // Licenses | The request data.
+            var licensesCreateOrPatch = new LicensesCreateOrPatch(); // LicensesCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetLicense200Response result = apiInstance.PatchLicense(id, licenses);
+                GetLicense200Response result = apiInstance.PatchLicense(id, licensesCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **licenses** | [**Licenses**](Licenses.md)| The request data. | 
+ **licensesCreateOrPatch** | [**LicensesCreateOrPatch**](LicensesCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

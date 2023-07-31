@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateCustomer
 
-> GetCustomer200Response CreateCustomer (Customers customers)
+> GetCustomer200Response CreateCustomer (CustomersCreateOrPatch customersCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new CustomersApi(Configuration.Default);
-            var customers = new Customers(); // Customers | The JSON object that will be posted to the REST API endpoint.
+            var customersCreateOrPatch = new CustomersCreateOrPatch(); // CustomersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetCustomer200Response result = apiInstance.CreateCustomer(customers);
+                GetCustomer200Response result = apiInstance.CreateCustomer(customersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customers** | [**Customers**](Customers.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **customersCreateOrPatch** | [**CustomersCreateOrPatch**](CustomersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchCustomer
 
-> GetCustomer200Response PatchCustomer (string id, Customers customers)
+> GetCustomer200Response PatchCustomer (string id, CustomersCreateOrPatch customersCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new CustomersApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var customers = new Customers(); // Customers | The request data.
+            var customersCreateOrPatch = new CustomersCreateOrPatch(); // CustomersCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetCustomer200Response result = apiInstance.PatchCustomer(id, customers);
+                GetCustomer200Response result = apiInstance.PatchCustomer(id, customersCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **customers** | [**Customers**](Customers.md)| The request data. | 
+ **customersCreateOrPatch** | [**CustomersCreateOrPatch**](CustomersCreateOrPatch.md)| The request data. | 
 
 ### Return type
 

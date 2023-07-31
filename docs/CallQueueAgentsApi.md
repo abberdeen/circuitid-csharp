@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 ## CreateCallQueueAgent
 
-> GetCallQueueAgent200Response CreateCallQueueAgent (Callqueueagents callqueueagents)
+> GetCallQueueAgent200Response CreateCallQueueAgent (CallqueueagentsCreateOrPatch callqueueagentsCreateOrPatch)
 
 Create a new object
 
@@ -42,12 +42,12 @@ namespace Example
             // Configuration.Default.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new CallQueueAgentsApi(Configuration.Default);
-            var callqueueagents = new Callqueueagents(); // Callqueueagents | The JSON object that will be posted to the REST API endpoint.
+            var callqueueagentsCreateOrPatch = new CallqueueagentsCreateOrPatch(); // CallqueueagentsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
 
             try
             {
                 // Create a new object
-                GetCallQueueAgent200Response result = apiInstance.CreateCallQueueAgent(callqueueagents);
+                GetCallQueueAgent200Response result = apiInstance.CreateCallQueueAgent(callqueueagentsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -66,7 +66,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **callqueueagents** | [**Callqueueagents**](Callqueueagents.md)| The JSON object that will be posted to the REST API endpoint. | 
+ **callqueueagentsCreateOrPatch** | [**CallqueueagentsCreateOrPatch**](CallqueueagentsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | 
 
 ### Return type
 
@@ -297,7 +297,7 @@ Name | Type | Description  | Notes
 
 ## PatchCallQueueAgent
 
-> GetCallQueueAgent200Response PatchCallQueueAgent (string id, Callqueueagents callqueueagents)
+> GetCallQueueAgent200Response PatchCallQueueAgent (string id, CallqueueagentsCreateOrPatch callqueueagentsCreateOrPatch)
 
 Patch object's data
 
@@ -326,12 +326,12 @@ namespace Example
 
             var apiInstance = new CallQueueAgentsApi(Configuration.Default);
             var id = "id_example";  // string | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-            var callqueueagents = new Callqueueagents(); // Callqueueagents | The request data.
+            var callqueueagentsCreateOrPatch = new CallqueueagentsCreateOrPatch(); // CallqueueagentsCreateOrPatch | The request data.
 
             try
             {
                 // Patch object's data
-                GetCallQueueAgent200Response result = apiInstance.PatchCallQueueAgent(id, callqueueagents);
+                GetCallQueueAgent200Response result = apiInstance.PatchCallQueueAgent(id, callqueueagentsCreateOrPatch);
                 Debug.WriteLine(result);
             }
             catch (ApiException e)
@@ -351,7 +351,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | 
- **callqueueagents** | [**Callqueueagents**](Callqueueagents.md)| The request data. | 
+ **callqueueagentsCreateOrPatch** | [**CallqueueagentsCreateOrPatch**](CallqueueagentsCreateOrPatch.md)| The request data. | 
 
 ### Return type
 
