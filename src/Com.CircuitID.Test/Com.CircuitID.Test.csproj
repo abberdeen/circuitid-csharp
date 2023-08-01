@@ -81,7 +81,7 @@ Contact: support@circuitid.com
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Com.CircuitID\Com.CircuitID.csproj">
-          <Project>{B5FE079F-A686-4E88-B8A9-B288D79CA6E5}</Project>
+          <Project>{47B7BC5A-0E7B-4058-B792-20747BCD2CC2}</Project>
           <Name>Com.CircuitID</Name>
       </ProjectReference>
   </ItemGroup>

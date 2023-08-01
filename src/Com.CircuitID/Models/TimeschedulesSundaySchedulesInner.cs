@@ -35,7 +35,7 @@ namespace Com.CircuitID.Models
         /// </summary>
         /// <param name="start">start.</param>
         /// <param name="end">end.</param>
-        public TimeschedulesSundaySchedulesInner(string start = default(string), string end = default(string))
+        public TimeschedulesSundaySchedulesInner(DateTime start = default(DateTime), DateTime end = default(DateTime))
         {
             this.Start = start;
             this.End = end;
@@ -45,13 +45,13 @@ namespace Com.CircuitID.Models
         /// Gets or Sets Start
         /// </summary>
         [DataMember(Name="start", EmitDefaultValue=false)]
-        public string Start { get; set; }
+        public DateTime Start { get; set; }
 
         /// <summary>
         /// Gets or Sets End
         /// </summary>
         [DataMember(Name="end", EmitDefaultValue=false)]
-        public string End { get; set; }
+        public DateTime End { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
