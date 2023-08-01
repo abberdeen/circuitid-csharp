@@ -216,8 +216,6 @@ docs/TimeschedulesCreateOrPatch.md
 docs/UserTokensApi.md
 docs/Users.md
 docs/UsersApi.md
-docs/UsersCommunicationValue.md
-docs/UsersCommunicationValueNotifications.md
 docs/UsersCreateOrPatch.md
 docs/Usertokens.md
 docs/UsertokensCreateOrPatch.md
@@ -440,8 +438,6 @@ src/Com.CircuitID.Test/Models/ServersCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/ServersTests.cs
 src/Com.CircuitID.Test/Models/TimeschedulesCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/TimeschedulesTests.cs
-src/Com.CircuitID.Test/Models/UsersCommunicationValueNotificationsTests.cs
-src/Com.CircuitID.Test/Models/UsersCommunicationValueTests.cs
 src/Com.CircuitID.Test/Models/UsersCreateOrPatchTests.cs
 src/Com.CircuitID.Test/Models/UsersTests.cs
 src/Com.CircuitID.Test/Models/UsertokensCreateOrPatchTests.cs
@@ -673,8 +669,6 @@ src/Com.CircuitID/Models/ServersCreateOrPatch.cs
 src/Com.CircuitID/Models/Timeschedules.cs
 src/Com.CircuitID/Models/TimeschedulesCreateOrPatch.cs
 src/Com.CircuitID/Models/Users.cs
-src/Com.CircuitID/Models/UsersCommunicationValue.cs
-src/Com.CircuitID/Models/UsersCommunicationValueNotifications.cs
 src/Com.CircuitID/Models/UsersCreateOrPatch.cs
 src/Com.CircuitID/Models/Usertokens.cs
 src/Com.CircuitID/Models/UsertokensCreateOrPatch.cs

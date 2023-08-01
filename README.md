@@ -10,7 +10,7 @@ We are excited to have you on board and are confident that this documentation si
 Happy coding!
 
 
-- API version: 0.47.21
+- API version: 0.47.22
 - SDK version: 1.0.0
 
     For more information, please visit [https://www.circuitid.com/](https://www.circuitid.com/)
@@ -84,7 +84,7 @@ namespace Example
         public static void Main()
         {
 
-            Configuration.Default.BasePath = "https://rest.circuitid.com";
+            Configuration.Default.BasePath = "https://cloud9.circuitid.com";
             // Configure API key authorization: jwt
             Configuration.Default.ApiKey.Add("Authorization", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
@@ -113,7 +113,7 @@ namespace Example
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -483,8 +483,6 @@ Class | Method | HTTP request | Description
  - [Models.Timeschedules](docs/Timeschedules.md)
  - [Models.TimeschedulesCreateOrPatch](docs/TimeschedulesCreateOrPatch.md)
  - [Models.Users](docs/Users.md)
- - [Models.UsersCommunicationValue](docs/UsersCommunicationValue.md)
- - [Models.UsersCommunicationValueNotifications](docs/UsersCommunicationValueNotifications.md)
  - [Models.UsersCreateOrPatch](docs/UsersCreateOrPatch.md)
  - [Models.Usertokens](docs/Usertokens.md)
  - [Models.UsertokensCreateOrPatch](docs/UsertokensCreateOrPatch.md)

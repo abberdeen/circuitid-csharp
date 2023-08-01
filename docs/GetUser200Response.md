@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **PhonePermission** | **string** |  | [optional] 
 **Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
 **VmTranscription** | **int** |  | [optional] [default to VmTranscriptionEnum.NUMBER_0]
-**Communication** | [**Dictionary&lt;string, UsersCommunicationValue&gt;**](UsersCommunicationValue.md) |  | [optional] 
+**Communication** | **Object** |  | [optional] 
 **Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 

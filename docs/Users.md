@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 **PhonePermission** | **string** |  | [optional] 
 **Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
 **VmTranscription** | **int** |  | [optional] [default to VmTranscriptionEnum.NUMBER_0]
-**Communication** | [**Dictionary&lt;string, UsersCommunicationValue&gt;**](UsersCommunicationValue.md) |  | [optional] 
+**Communication** | **Object** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)
