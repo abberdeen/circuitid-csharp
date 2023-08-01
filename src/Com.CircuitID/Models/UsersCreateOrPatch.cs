@@ -2360,7 +2360,7 @@ namespace Com.CircuitID.Models
         /// <param name="timezone">timezone (required) (default to TimezoneEnum.AmericaNewYork).</param>
         /// <param name="vmTranscription">vmTranscription (default to VmTranscriptionEnum.NUMBER_0).</param>
         /// <param name="communication">communication.</param>
-        public UsersCreateOrPatch(string email = default(string), string password = default(string), string first = default(string), string last = default(string), string mobilePhone = default(string), string businessPhone = default(string), int extension = default(int), int customCallerId = default(int), string jobTitle = default(string), string department = default(string), string office = default(string), string avatar = default(string), LanguageEnum? language = LanguageEnum.En, IsPrimaryEnum? isPrimary = IsPrimaryEnum.NUMBER_0, VmGreetingTypeEnum? vmGreetingType = VmGreetingTypeEnum.Default, int vmTimeout = 20, string vmFile = default(string), string vmPlaybackNumber = default(string), int pin = 1234, string number = default(string), string region = default(string), string callerIdNumber = default(string), AdminPermissionEnum? adminPermission = default(AdminPermissionEnum?), BillingPermissionEnum? billingPermission = default(BillingPermissionEnum?), PhonePermissionEnum? phonePermission = default(PhonePermissionEnum?), TimezoneEnum timezone = TimezoneEnum.AmericaNewYork, VmTranscriptionEnum? vmTranscription = VmTranscriptionEnum.NUMBER_0, Object communication = default(Object))
+        public UsersCreateOrPatch(string email = default(string), string password = default(string), string first = default(string), string last = default(string), string mobilePhone = default(string), string businessPhone = default(string), int extension = default(int), int customCallerId = default(int), string jobTitle = default(string), string department = default(string), string office = default(string), string avatar = default(string), LanguageEnum? language = LanguageEnum.En, IsPrimaryEnum? isPrimary = IsPrimaryEnum.NUMBER_0, VmGreetingTypeEnum? vmGreetingType = VmGreetingTypeEnum.Default, int vmTimeout = 20, string vmFile = default(string), string vmPlaybackNumber = default(string), int pin = 1234, string number = default(string), string region = default(string), string callerIdNumber = default(string), AdminPermissionEnum? adminPermission = default(AdminPermissionEnum?), BillingPermissionEnum? billingPermission = default(BillingPermissionEnum?), PhonePermissionEnum? phonePermission = default(PhonePermissionEnum?), TimezoneEnum timezone = TimezoneEnum.AmericaNewYork, VmTranscriptionEnum? vmTranscription = VmTranscriptionEnum.NUMBER_0, UsersCommunication communication = default(UsersCommunication))
         {
             // to ensure "email" is required (not null)
             if (email == null)
@@ -2618,7 +2618,7 @@ namespace Com.CircuitID.Models
         /// Gets or Sets Communication
         /// </summary>
         [DataMember(Name="communication", EmitDefaultValue=false)]
-        public Object Communication { get; set; }
+        public UsersCommunication Communication { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

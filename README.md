@@ -483,6 +483,8 @@ Class | Method | HTTP request | Description
  - [Models.Timeschedules](docs/Timeschedules.md)
  - [Models.TimeschedulesCreateOrPatch](docs/TimeschedulesCreateOrPatch.md)
  - [Models.Users](docs/Users.md)
+ - [Models.UsersCommunication](docs/UsersCommunication.md)
+ - [Models.UsersCommunicationNotifications](docs/UsersCommunicationNotifications.md)
  - [Models.UsersCreateOrPatch](docs/UsersCreateOrPatch.md)
  - [Models.Usertokens](docs/Usertokens.md)
  - [Models.UsertokensCreateOrPatch](docs/UsertokensCreateOrPatch.md)
