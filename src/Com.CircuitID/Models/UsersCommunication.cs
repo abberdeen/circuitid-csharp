@@ -39,7 +39,7 @@ namespace Com.CircuitID.Models
         /// <param name="newsletters">newsletters.</param>
         /// <param name="voicemails">voicemails.</param>
         /// <param name="web">web.</param>
-        public UsersCommunication(UsersCommunicationNotifications notifications = default(UsersCommunicationNotifications), UsersCommunicationNotifications missedCalls = default(UsersCommunicationNotifications), UsersCommunicationNotifications callRecordings = default(UsersCommunicationNotifications), UsersCommunicationNotifications newsletters = default(UsersCommunicationNotifications), UsersCommunicationNotifications voicemails = default(UsersCommunicationNotifications), UsersCommunicationNotifications web = default(UsersCommunicationNotifications))
+        public UsersCommunication(UsersCommunicationNotifications notifications = default(UsersCommunicationNotifications), UsersCommunicationNotifications missedCalls = default(UsersCommunicationNotifications), UsersCommunicationNotifications callRecordings = default(UsersCommunicationNotifications), UsersCommunicationNotifications newsletters = default(UsersCommunicationNotifications), UsersCommunicationNotifications voicemails = default(UsersCommunicationNotifications), UsersCommunicationWeb web = default(UsersCommunicationWeb))
         {
             this.Notifications = notifications;
             this.MissedCalls = missedCalls;
@@ -83,7 +83,7 @@ namespace Com.CircuitID.Models
         /// Gets or Sets Web
         /// </summary>
         [DataMember(Name="web", EmitDefaultValue=false)]
-        public UsersCommunicationNotifications Web { get; set; }
+        public UsersCommunicationWeb Web { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

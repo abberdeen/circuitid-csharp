@@ -12,7 +12,7 @@ Contact: support@circuitid.com
     
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3AEF7870-559A-47F4-AC9F-CFE47F517F49}</ProjectGuid>
+    <ProjectGuid>{3DE71C9E-A127-4838-935F-378DE320757C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Com.CircuitID</RootNamespace>

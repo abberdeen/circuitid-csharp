@@ -7,13 +7,13 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Name** | **string** |  | 
 **Timezone** | **string** |  | [default to TimezoneEnum.AmericaNewYork]
-**Sunday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Monday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Tuesday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Wednesday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Thursday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Friday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
-**Saturday** | **Dictionary&lt;string, List&lt;Object&gt;&gt;** |  | 
+**Sunday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Monday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Tuesday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Wednesday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Thursday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Friday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
+**Saturday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  | 
 **Id** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **CreatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 
 **UpdatedByUserId** | **string** | ObjectId (unique 12 bytes ID) | [optional] 

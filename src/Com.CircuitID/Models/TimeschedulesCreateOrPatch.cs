@@ -2148,7 +2148,7 @@ namespace Com.CircuitID.Models
         /// <param name="thursday">thursday (required).</param>
         /// <param name="friday">friday (required).</param>
         /// <param name="saturday">saturday (required).</param>
-        public TimeschedulesCreateOrPatch(string name = default(string), TimezoneEnum timezone = TimezoneEnum.AmericaNewYork, Dictionary<string, List<Object>> sunday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> monday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> tuesday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> wednesday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> thursday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> friday = default(Dictionary<string, List<Object>>), Dictionary<string, List<Object>> saturday = default(Dictionary<string, List<Object>>))
+        public TimeschedulesCreateOrPatch(string name = default(string), TimezoneEnum timezone = TimezoneEnum.AmericaNewYork, TimeschedulesSunday sunday = default(TimeschedulesSunday), TimeschedulesSunday monday = default(TimeschedulesSunday), TimeschedulesSunday tuesday = default(TimeschedulesSunday), TimeschedulesSunday wednesday = default(TimeschedulesSunday), TimeschedulesSunday thursday = default(TimeschedulesSunday), TimeschedulesSunday friday = default(TimeschedulesSunday), TimeschedulesSunday saturday = default(TimeschedulesSunday))
         {
             // to ensure "name" is required (not null)
             if (name == null)
@@ -2253,43 +2253,43 @@ namespace Com.CircuitID.Models
         /// Gets or Sets Sunday
         /// </summary>
         [DataMember(Name="sunday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Sunday { get; set; }
+        public TimeschedulesSunday Sunday { get; set; }
 
         /// <summary>
         /// Gets or Sets Monday
         /// </summary>
         [DataMember(Name="monday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Monday { get; set; }
+        public TimeschedulesSunday Monday { get; set; }
 
         /// <summary>
         /// Gets or Sets Tuesday
         /// </summary>
         [DataMember(Name="tuesday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Tuesday { get; set; }
+        public TimeschedulesSunday Tuesday { get; set; }
 
         /// <summary>
         /// Gets or Sets Wednesday
         /// </summary>
         [DataMember(Name="wednesday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Wednesday { get; set; }
+        public TimeschedulesSunday Wednesday { get; set; }
 
         /// <summary>
         /// Gets or Sets Thursday
         /// </summary>
         [DataMember(Name="thursday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Thursday { get; set; }
+        public TimeschedulesSunday Thursday { get; set; }
 
         /// <summary>
         /// Gets or Sets Friday
         /// </summary>
         [DataMember(Name="friday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Friday { get; set; }
+        public TimeschedulesSunday Friday { get; set; }
 
         /// <summary>
         /// Gets or Sets Saturday
         /// </summary>
         [DataMember(Name="saturday", EmitDefaultValue=true)]
-        public Dictionary<string, List<Object>> Saturday { get; set; }
+        public TimeschedulesSunday Saturday { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -2354,45 +2354,38 @@ namespace Com.CircuitID.Models
                 ) && 
                 (
                     this.Sunday == input.Sunday ||
-                    this.Sunday != null &&
-                    input.Sunday != null &&
-                    this.Sunday.SequenceEqual(input.Sunday)
+                    (this.Sunday != null &&
+                    this.Sunday.Equals(input.Sunday))
                 ) && 
                 (
                     this.Monday == input.Monday ||
-                    this.Monday != null &&
-                    input.Monday != null &&
-                    this.Monday.SequenceEqual(input.Monday)
+                    (this.Monday != null &&
+                    this.Monday.Equals(input.Monday))
                 ) && 
                 (
                     this.Tuesday == input.Tuesday ||
-                    this.Tuesday != null &&
-                    input.Tuesday != null &&
-                    this.Tuesday.SequenceEqual(input.Tuesday)
+                    (this.Tuesday != null &&
+                    this.Tuesday.Equals(input.Tuesday))
                 ) && 
                 (
                     this.Wednesday == input.Wednesday ||
-                    this.Wednesday != null &&
-                    input.Wednesday != null &&
-                    this.Wednesday.SequenceEqual(input.Wednesday)
+                    (this.Wednesday != null &&
+                    this.Wednesday.Equals(input.Wednesday))
                 ) && 
                 (
                     this.Thursday == input.Thursday ||
-                    this.Thursday != null &&
-                    input.Thursday != null &&
-                    this.Thursday.SequenceEqual(input.Thursday)
+                    (this.Thursday != null &&
+                    this.Thursday.Equals(input.Thursday))
                 ) && 
                 (
                     this.Friday == input.Friday ||
-                    this.Friday != null &&
-                    input.Friday != null &&
-                    this.Friday.SequenceEqual(input.Friday)
+                    (this.Friday != null &&
+                    this.Friday.Equals(input.Friday))
                 ) && 
                 (
                     this.Saturday == input.Saturday ||
-                    this.Saturday != null &&
-                    input.Saturday != null &&
-                    this.Saturday.SequenceEqual(input.Saturday)
+                    (this.Saturday != null &&
+                    this.Saturday.Equals(input.Saturday))
                 );
         }
 
